@@ -7,8 +7,6 @@
 -
 -->
 <!--CSS-->
-<!--Stock bootstrap theme-->
-<!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">-->
 <!--Minty https://bootswatch.com/minty/-->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!--JS-->
@@ -24,3 +22,16 @@
 <link rel="stylesheet" href="css/main.css">
 <!--JS-->
 <script src="js/main.js"></script>
+
+<!--Title-->
+<title>ICT1004 Group 7</title>
+        
+<!--Favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+<link rel="manifest" href="media/favicon/site.webmanifest">
+<link rel="mask-icon" href="media/favicon/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+

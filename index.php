@@ -4,14 +4,17 @@
         <?php
             include "inc.head.php";
         ?>
-        <title>ICT1004 Group 7</title>
     </head>
     <body>
-        
         <?php
             include "inc.nav.php";
         ?>
         
+        <!--
+        -
+        Page content
+        -
+        -->
         <header>
             <div class="jumbotron">
                 <div class="container">

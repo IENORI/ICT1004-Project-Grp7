@@ -1,4 +1,8 @@
-<!-- Footer -->
+<!-- 
+-
+Footer common 
+-
+-->
 <footer class="container text-center">
     <br>
     <br>
