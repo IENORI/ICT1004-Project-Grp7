@@ -1,6 +1,45 @@
 /*USER DEFINED INDEX CSS*/
 
-/*Hero Style*/
+.index-content-margin {
+  margin-top: 10px;
+}
+
+
+/*
+Nav Style
+*/
+.index-nav-pad {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.bg-primary {
+  transition: background 0.5s ease-in-out;
+}
+
+.bg-primary .navbar {
+  padding: 1rem 0;
+}
+
+.scroll .hero {
+  transform: scale(0.98);
+}
+
+.hero {
+  transition: transform 0.5s ease-in-out;
+}
+
+/*
+Hero Style
+*/
+/*.container-fluid-max {*/
+/*  max-width: 1440px;*/
+/*}*/
+
+.cover {
+  background: no-repeat center/cover;
+}
+
 .scroll .hero {
   transform: scale(0.98);
 }
@@ -26,36 +65,4 @@
  
 .hero .container-fluid {
   z-index: 10;
-}
-
-
-/*Nav Style*/
-.scroll .page-header {
-  background: var(--red);
-}
- 
-.page-header {
-  transition: background 0.5s ease-in-out;
-}
- 
-.page-header .navbar {
-  padding: 1rem 0;
-}
- 
-.page-header .navbar-toggler {
-  border-color: var(--white); 
-}
- 
-.scroll .hero {
-  transform: scale(0.98);
-}
- 
-.hero {
-  transition: transform 0.5s ease-in-out;
-}
- 
-@media screen and (max-width: 991px) {
-  .page-header {
-    background: var(--red);
-  }
 }
