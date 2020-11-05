@@ -4,45 +4,60 @@
         <?php
             include "inc.head.php";
         ?>
+        <!--Index specific CSS-->
+        <link rel="stylesheet" href="css/main.css">
     </head>
     <body>
-        <?php
-            include "inc.nav.php";
-        ?>
+        <!--Index specific Header-->
+        <header class="fixed-top page-header">
+            <div class="container-fluid container-fluid-max">
+                <nav id ="navbar" class="navbar navbar-expand-lg navbar-dark">
+                    <a class="navbar-brand" href="/">
+                        <img id="nav-logo" src="media/icon/cat.svg" width="30" height="30" alt="CAT">
+                        Fancy Felines
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggle">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navBarToggle">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Store</a>
+                            </li>
+                        </ul>
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="cart.php">
+                                    <img id="nav-logo" src="media/icon/shopping_cart-white-48dp.svg" width="30" height="30" alt="CAT">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </header>
         
         <!--
         -
         Page content
         -
         -->
-        <header>
-            <div class="jumbotron">
-                <div class="container">
-                    <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active" data-interval="10000">
-                                <img src="media/image/untitled.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item" data-interval="2000">
-                                <img src="media/image/untitled.jpg" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item">
-                                <img src="media/image/untitled.jpg" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
-                    </div>
-                </div>
-            </div>  
-        </header>
-        
+        <main>
+        <!--<section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(media/image/michael-sum-LEpfefQf4rU-unsplash.jpg);">-->
+        <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(https://source.unsplash.com/2560x1600/?cat);" alt="test">
+          <div class="container-fluid container-fluid-max">
+            <div class="row">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <h1 class="text-white">Cats</h1>
+                <div class="mt-3">
+                  <a class="btn bg-red text-white mr-2" href="" role="button">What are they?</a>
+                  <a class="btn bg-red text-white" href="" role="button">Should I fear them?</a>
+                </div> 
+              </div>
+            </div>
+          </div>
+        </section>
+        </main>
         <?php
             include "inc.front_store.php";
         ?>
