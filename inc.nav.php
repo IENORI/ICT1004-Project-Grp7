@@ -6,7 +6,7 @@
 <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
         <img id="nav-logo" src="media/icon/cat.svg" width="30" height="30" alt="CAT">
-        Fancy Felines
+        AdoptCat@SG
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggle">
         <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,10 @@
     <div class="collapse navbar-collapse" id="navBarToggle">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Store</a>
+                <a class="nav-link" href="#">Adopt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
