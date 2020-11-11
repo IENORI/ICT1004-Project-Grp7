@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39806988-32f6-4a66-a049-77d6d4e2729c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/css/index_css.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/index_css.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,7 +26,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="preferences.editor" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -50,6 +48,8 @@
       <option name="presentableId" value="Default" />
       <updated>1604555672139</updated>
       <workItem from="1604555673734" duration="3412000" />
+      <workItem from="1604562110153" duration="613000" />
+      <workItem from="1605071195234" duration="344000" />
     </task>
     <servers />
   </component>
@@ -93,10 +93,11 @@
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
     <state width="2518" height="129" key="GridCell.Tab.0.right/-1920.233.1920.1057/368.1463.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604559107008" />
-    <state x="789" y="370" key="SettingsEditor" timestamp="1604556122330">
-      <screen x="0" y="23" width="2560" height="1417" />
+    <state x="398" y="210" key="SettingsEditor" timestamp="1604562191883">
+      <screen x="0" y="23" width="1792" height="1097" />
     </state>
     <state x="789" y="370" key="SettingsEditor/-1920.233.1920.1057/368.1463.1792.1097/0.23.2560.1417@0.23.2560.1417" timestamp="1604556122330" />
+    <state x="398" y="210" key="SettingsEditor/0.23.1792.1097@0.23.1792.1097" timestamp="1604562191883" />
     <state x="945" y="348" width="670" height="676" key="search.everywhere.popup" timestamp="1604557716215">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
