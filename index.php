@@ -33,8 +33,8 @@
                         </ul>
                         <ul class="navbar-nav ml-auto">
                             <li class="nav-item">
-                                <a class="nav-link" href="cart.php">
-                                    <img id="nav-logo" src="media/icon/shopping_cart-white-48dp.svg" width="30" height="30" alt="CAT">
+                                <a class="nav-link" href="login.php">
+                                    <img id="nav-logo" src="media/icon/face-white-48dp.svg" width="30" height="30" alt="LOGIN">
                                 </a>
                             </li>
                         </ul>
