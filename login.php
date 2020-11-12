@@ -30,24 +30,24 @@
             <div class="row justify-content-center">
                 <div class="col-sm-6">
                     <div class="card">
-                        <h4 class="card-header">Login</h4>
+                        <h4 class="card-header bg-success text-white">Login</h4>
                         <div class="card-body" style="padding-bottom: 0">
                             <form action="process.login.php" method="post">
                                 <div class="form-group">
-                                    <label for="loginEmail">Email address :</label>
-                                    <input required type="email" class="form-control" id="loginEmail" placeholder="Enter email">
+                                    <label for="login_Email">Email address :</label>
+                                    <input required type="email" class="form-control" id="login_Email" name="login_Email" placeholder="Enter email">
                                 </div>
                                 <div class="form-group">
-                                    <label for="loginPassword">Password :</label>
-                                    <input required type="password" class="form-control" id="loginPassword" placeholder="Password">
+                                    <label for="login_Password">Password :</label>
+                                    <input required maxlength="32" minlength="8" type="password" class="form-control" id="login_Password" name="login_Password" placeholder="Password">
                                 </div>
                                 <div class="form-group">
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-success">Submit</button>
                                 </div>
                             </form>
                         </div>
                         <div class="card-footer text-muted">
-                            <a href="#" class="card-link">Sign up for an account</a>
+                            <a href="signup.php" class="card-link text-info">Sign up for an account</a>
                         </div>
                     </div>
                 </div>
