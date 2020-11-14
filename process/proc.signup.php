@@ -9,7 +9,7 @@
     //     HTML FORM: Fname         ->  |      Fname      |       VARCHAR(45)  |     NN                  |      Data will be cleansed and added to DB
     //     HTML FORM: Lname         ->  |      Lname      |       VARCHAR(45)  |     N/A                 |      Data will be cleansed and added to DB
     //     HTML FORM: Email         ->  |      Email      |       VARCHAR(45)  |     NN, UQ              |      Data will be cleansed and added to DB
-    //     HTML FORM: Password      ->  |      Password   |       VARCHAR(255) |     NN, UQ              |      Data will be hashed from original password and added to DB
+    //     HTML FORM: Password      ->  |      Pwd        |       VARCHAR(255) |     NN, UQ              |      Data will be hashed from original password and added to DB
     //     HTML FORM: Password_con      |      N/A        |       N/A          |     N/A                 |      Data will only be used to validated in PHP
     //     HTML FORM: HPNum         ->  |      HPNum      |       INT(8)       |     NN, UQ              |      Data will be cleansed and added to DB
     //     N/A                          |      IsAdmin    |       TINYINT(1)   |     N/A                 |      Data will be manually added in MySQL to signify admin
@@ -56,6 +56,7 @@
         $Password_con = $post_req["signup_PasswordConfirm"];
         list($Password, $msg_error, $status) = verify_password($Password, $Password_raw, $Password_con, $msg_error, $status);
 
+        save_to_db($Fname, $Lname, $Email, $Password, $HPNum, $msg_error, $status);
     }
 
 
@@ -89,5 +90,34 @@
             $Password = password_hash($pwd_raw, PASSWORD_DEFAULT);
         }
         return array($Password, $msg_error, $status);
+    }
+
+    function save_to_db($Fname, $Lname, $Email, $Password, $HPNum, $msg_error, $status) {
+        //Read db access file from ini
+        $config = parse_ini_file('db.ini');
+        $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
+
+        if ($conn -> connect_error) {
+            $msg_error = "!! Error creating DB connection >> ". $conn -> connect_error ." << !!";
+            $status = false;
+        } else {
+            //Type cast HPNum back to int for SQL
+            $HPNum = (int)$HPNum;
+
+            //SQL Prepared statement
+            $stmt = $conn -> prepare("INSERT INTO user (Fname, Lname, Email, Pwd, HPNum) VALUES (?, ?, ?, ?, ?)");
+            $res = $stmt -> bind_param('ssssi', $Fname, $Lname, $Email, $Password, $HPNum);
+
+            //Execute SQL
+            if (!$res = $stmt->execute()) {
+                $msg_error = "!! stmt failed to execute >> ". $stmt -> error . " << !!!";
+                $status = false;
+            }
+            $status = true;
+            $stmt -> close();
+        }
+        $conn -> close();
+
+        return 0;
     }
 ?>
