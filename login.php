@@ -47,7 +47,7 @@
                             </form>
                         </div>
                         <div class="card-footer text-muted">
-                            <a href="signup.php" class="card-link text-info">Sign up for an account</a>
+                            <a href="signup.php" class="card-link text-info">Sign up for an account, its free!</a>
                         </div>
                     </div>
                 </div>

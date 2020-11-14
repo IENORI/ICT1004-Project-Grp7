@@ -33,14 +33,14 @@
                         <h4 class="card-header bg-secondary text-white">Create your AdoptCat@SG Account</h4>
                         <div class="card-body" style="padding-bottom: 0">
                             <p class="card-text">Kindly provide the following information to create an account with us.</p>
-                            <form action="process.login.php" method="post">
+                            <form action="process/proc.signup.php" method="post">
                                 <div class="form-group">
                                     <div class="row">
                                         <div class="col">
-                                            <input required maxlength="45" type="text" class="form-control" id="signup_FirstName" name="signup_Firstname" placeholder="First name">
+                                            <input required maxlength="45" type="text" class="form-control" id="signup_FirstName" name="signup_FirstName" placeholder="First name">
                                         </div>
                                         <div class="col">
-                                            <input maxlength="45" type="text" class="form-control" id="signup_LastName" name="signup_Firstname" placeholder="Last name">
+                                            <input maxlength="45" type="text" class="form-control" id="signup_LastName" name="signup_LastName" placeholder="Last name">
                                         </div>
                                     </div>
                                 </div>
@@ -52,7 +52,7 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">🇸🇬 +65</span>
                                         </div>
-                                        <input required maxlength="8" minlength="8" type="number" class="form-control" id="signup_MobileNumber" name="signup_MobileNumber" placeholder="Mobile Number">
+                                        <input required max="99999999" min="60000000" type="number" class="form-control" id="signup_MobileNumber" name="signup_MobileNumber" placeholder="Mobile Number">
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -61,7 +61,7 @@
                                             <input required maxlength="32" minlength="8" type="password" class="form-control" id="signup_Password" name="signup_Password" placeholder="Password">
                                         </div>
                                         <div class="col">
-                                            <input required maxlength="32" minlength="8" type="password" class="form-control" id="signup_PasswordConfirm" name="signup_Password" placeholder="Confirm">
+                                            <input required maxlength="32" minlength="8" type="password" class="form-control" id="signup_PasswordConfirm" name="signup_PasswordConfirm" placeholder="Confirm">
                                         </div>
                                     </div>
                                     <p><small>Passwords are required to contain between <strong>8</strong> and <strong>32</strong> characters.</small></p>
