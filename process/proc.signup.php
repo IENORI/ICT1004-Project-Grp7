@@ -46,8 +46,6 @@
         empty($post_req["signup_PasswordConfirm"])) {
 
         $msg_error = "!! Invalid form data !!";
-        $status = false;
-
     } else {
         // Sanitize Fname, Lname, HPNum
         $Fname = sanitize_input($post_req["signup_FirstName"]);
@@ -58,7 +56,7 @@
         // Sanitize Password
         $Password_raw = $post_req["signup_Password"];
         $Password_con = $post_req["signup_PasswordConfirm"];
-        list($Password, $msg_error, $status) = verify_password($Password, $Password_raw, $Password_con, $msg_error, $status);
+        list($Password, $msg_error) = verify_password($Password, $Password_raw, $Password_con, $msg_error);
 
         // Add validated data to SQL
         list($msg_error, $status) = save_to_db($Fname, $Lname, $Email, $Password, $HPNum, $msg_error, $status);
@@ -88,6 +86,8 @@
         return $data;
     }
 
+
+
     //  Function   :    Match email with built in PHP email format validator
     //
     //  Input      :    $Email      = email from $post_req
@@ -104,6 +104,8 @@
         return array($Email, $msg_error);
     }
 
+
+
     //  Function  :     Ensure password confirmations match and hashing of valid password
     //
     //  Input     :     $Password   = Empty VAR for hashed password
@@ -113,7 +115,7 @@
     //
     //  Return    :     $Password   = validated and hashed password if valid
     //                  $msg_error  = should return "NO ERROR" unless error thrown
-    function verify_password($Password, $pwd_raw, $pwd_con, $msg_error, $status) {
+    function verify_password($Password, $pwd_raw, $pwd_con, $msg_error) {
         if ($pwd_con != $pwd_raw) {
             $msg_error = "!! Passwords do not match !!";
         } else {
@@ -121,6 +123,8 @@
         }
         return array($Password, $msg_error);
     }
+
+
 
     //  Function   :    Prepare SQL statement and insert valid information into MySQL for account creation
     //
