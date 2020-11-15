@@ -94,7 +94,8 @@
 
     function save_to_db($Fname, $Lname, $Email, $Password, $HPNum, $msg_error, $status) {
         //Read db access file from ini
-        $config = parse_ini_file('db.ini');
+//        $config = parse_ini_file('db.ini');
+        $config = parse_ini_file('/home/dev/db.ini');
         $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
 
         if ($conn -> connect_error) {
