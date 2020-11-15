@@ -14,10 +14,10 @@
     <div class="collapse navbar-collapse" id="navBarToggle">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#">Adopt</a>
+                <a class="nav-link" href="adopt.php">Adopt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="aboutus.php">About</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">

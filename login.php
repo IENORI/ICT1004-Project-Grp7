@@ -1,3 +1,11 @@
+<?php
+    session_start();
+
+    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
+        header("Location: index.php");
+        exit;
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -32,7 +40,7 @@
                     <div class="card">
                         <h4 class="card-header bg-success text-white">Login</h4>
                         <div class="card-body" style="padding-bottom: 0">
-                            <form action="process.login.php" method="post">
+                            <form action="process/proc.login.php" method="post">
                                 <div class="form-group">
                                     <label for="login_Email">Email address :</label>
                                     <input required type="email" class="form-control" id="login_Email" name="login_Email" placeholder="Enter email">
