@@ -26,6 +26,7 @@
         // Sanitize Email
         $Email = sanitize_input($post_req["login_Email"]);
         $Password_raw = $post_req["login_Password"];
+        retrieve_from_db($Email, $Password_raw, $msg_error, $status);
     }
 
 
@@ -86,14 +87,14 @@
 
     //  Function   :    Prepare SQL statement to search MySQL for login
     //
-    //  Input      :    $Email      = Cleaned and validated Email
-    //                  $Password   = Validated and hashed Password
-    //                  $msg_error  = global error string variable "NO ERROR"
-    //                  $status     = global status bool "true"
+    //  Input      :    $Email          = Cleaned and validated Email
+    //                  $Password_raw   = Validated and hashed Password
+    //                  $msg_error      = global error string variable "NO ERROR"
+    //                  $status         = global status bool "true"
     //
-    //  Return     :    $msg_error  = should return "NO ERROR" unless error thrown
-    //                  $status     = should return "true" unless error thrown
-    function retrieve_from_db($Email, $Password, $msg_error, $status) {
+    //  Return     :    $msg_error      = should return "NO ERROR" unless error thrown
+    //                  $status         = should return "true" unless error thrown
+    function retrieve_from_db($Email, $Password_Raw, $msg_error, $status) {
 
         // Read db access file from ini
         $config = parse_ini_file('db.ini');                 // FOR LOCAL DEV
@@ -109,16 +110,39 @@
         } else {
 
             // SQL Prepared statement
-            $stmt = $conn -> prepare("INSERT INTO user (Fname, Lname, Email, Pwd, HPNum) VALUES (?, ?, ?, ?, ?)");
-            $res = $stmt -> bind_param('ssssi', $Fname, $Lname, $Email, $Password, $HPNum);
+            $stmt = $conn -> prepare("SELECT * FROM user WHERE Email = ?");
+            $res = $stmt -> bind_param('s', $Email);
 
             //Execute SQL
-            if (!$res = $stmt->execute()) {
+            if (!$res = $stmt -> execute()) {
                 // ERROR - Failed to execute MySQL statement (Most common when duplicate entry)
                 $msg_error = "!! stmt failed to execute >> ". $stmt -> error . " << !!!";
             } else {
-                $stmt->close();
-                $status = true;
+                // Fetch row regardless if empty
+                $res = $stmt -> get_result();
+                $row = $res->fetch_assoc();
+                if (empty($row)) {
+                    // ERROR - Checks if row is "empty" and throws error (Email not found)
+                    $msg_error = "!! Email not found or password does not match !!";
+                    echo "!!! email wrong !!!";
+                } else {
+                    // Retrieve hashed password from DB
+                    $Password_Hashed_DB = $row["Pwd"];
+                    // Check if hashed and raw matches
+                    if (!password_verify($Password_Raw, $Password_Hashed_DB)) {
+                        // ERROR - Throws error if password does not match DB
+                        $msg_error = "!! Email not found or password does not match !!";
+                        echo "!!! pwd wrong !!!";
+                    } else {
+                        $Email = $row["Email"];
+                        $Fname = $row["Fname"];
+                        $IsAdmin = $row["IsAdmin"];
+                        echo "Yes";                     //  <<-- Stopped here, fetch email & password with appropriate flows (echo)
+                    }
+
+                    $stmt->close();
+                    $status = true;
+                }
             }
         }
         $conn -> close();

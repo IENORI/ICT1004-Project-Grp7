@@ -40,7 +40,7 @@
                     <div class="card">
                         <h4 class="card-header bg-success text-white">Login</h4>
                         <div class="card-body" style="padding-bottom: 0">
-                            <form action="#" method="post">
+                            <form action="process/proc.login.php" method="post">
                                 <div class="form-group">
                                     <label for="login_Email">Email address :</label>
                                     <input required type="email" class="form-control" id="login_Email" name="login_Email" placeholder="Enter email">
