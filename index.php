@@ -48,7 +48,7 @@
         -
         -->
         <main>
-            <section id="hero_splash" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(media/image/michael-sum-LEpfefQf4rU-unsplash.jpg);">
+            <section id="hero_splash" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(media/image/mainpage.jpeg);">
     <!--        <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(https://source.unsplash.com/2560x1600/?cat);">-->
               <div class="container-fluid container-fluid-max">
                 <div class="row">
