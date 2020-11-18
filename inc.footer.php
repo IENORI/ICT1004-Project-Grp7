@@ -4,7 +4,5 @@ Footer common
 -
 -->
 <footer class="container text-center">
-    <br>
-    <br>
-    <p><em>Copyright &copy; 2020 Fancy Felines</em></p>
+    <p><em>Copyright &copy; 2020 CatSec</em></p>
 </footer>
