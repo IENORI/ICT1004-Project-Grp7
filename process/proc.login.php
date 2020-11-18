@@ -138,6 +138,11 @@
                         $Fname = $row["Fname"];
                         $IsAdmin = $row["IsAdmin"];
                         echo "Yes";                     //  <<-- Stopped here, fetch email & password with appropriate flows (echo)
+                        
+                        session_start();
+                        $_SESSION['email'] = $Email;
+                        echo '<br> the session id is:';
+                        echo session_id();
                     }
 
                     $stmt->close();

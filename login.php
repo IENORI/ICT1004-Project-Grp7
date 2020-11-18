@@ -1,9 +1,8 @@
 <?php
     session_start();
 
-    if (isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true) {
-        header("Location: adopt.php");
-        exit;
+    if(session_status() != PHP_SESSION_NONE){ //If the user is logged on
+        echo "SESSION  ID: " . session_id();
     }
 ?>
 <!DOCTYPE html>
