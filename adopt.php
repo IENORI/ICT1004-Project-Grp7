@@ -27,20 +27,19 @@
         </div>
         
         <main class="container">
-            <div class="row">
                 <div class="col-sm-8" align="center">
-                    
+                    <div class="row">
                         <figure class="figure">
                             <img src="media/image/image002.png" class="rounded figure-img img-fluid">
                             <figcaption class="figure-caption">$500</figcaption>
                         </figure>
-                </div>
-                 <div class="col-sm-8" align="center">
+                    </div>
+                    <div class="row">
                         <figure class="figure">
                             <img src="media/image/image002.png" class="rounded figure-img img-fluid">
                             <figcaption class="figure-caption">$500</figcaption>
                         </figure>
-                 </div>
+                    </div>
                 </div>
                 <div class="col-sm-4">
                     

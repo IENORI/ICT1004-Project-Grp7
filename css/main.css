@@ -1,20 +1,2 @@
 /*USER DEFINED CSS*/
-.image_thumbnail{
-    border-style: double;
-    border-color: gray;
-    vertical-align: top;
-}
-.image_popup{
-    position: absolute;
-    height: 100px;
-    right: 0px;
-    bottom: 305px;
-    z-index: 1;
-}
-
-.image_popup img{
-    height: 500px;
-    border: 10px solid #D3D3D3;
-    border-radius: 5px;
-}
 
