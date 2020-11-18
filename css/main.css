@@ -7,7 +7,7 @@
 .image_popup{
     position: absolute;
     height: 100px;
-    right: 0px;
+    right: 10px;
     bottom: 305px;
     z-index: 1;
 }
