@@ -17,7 +17,7 @@
                 <nav id ="navbar" class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="/">
                         <img id="nav-logo" src="media/icon/cat.svg" width="30" height="30">
-                        AdoptCat@SG
+                        CatSec
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggle">
                         <span class="navbar-toggler-icon"></span>
@@ -25,10 +25,10 @@
                     <div class="collapse navbar-collapse" id="navBarToggle">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link" href="adopt.php">Adopt</a>
+                                <a class="nav-link" href="aboutus.php">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="aboutus.php">About</a>
+                                <a class="nav-link" href="adopt.php">Adopt</a>
                             </li>
                         </ul>
                         <ul class="navbar-nav ml-auto">
@@ -53,19 +53,15 @@
               <div class="container-fluid container-fluid-max">
                 <div class="row">
                   <div class="col-12 col-md-8 col-lg-6 col-xl-5">
-                    <h1 class="text-white">Cats</h1>
+                    <h1 class="text-white">Find a friend for life!</h1>
                     <div class="mt-3">
-                      <a class="btn bg-red text-white mr-2" href="" role="button">What are they?</a>
-                      <a class="btn bg-red text-white" href="" role="button">Should I fear them?</a>
+                        <h6 class="text-white">CatSec is a governmental, registered animal welfare charity. We provide shelter for cats with no home and urge kind-hearted user to give these furry balls a new home! </h6>
+                        <!--<a class="btn bg-red text-white mr-2" href="" role="button">What are they?</a>-->
+                        <!--<a class="btn bg-red text-white" href="" role="button">Should I fear them?</a>--> 
                     </div>
                   </div>
                 </div>
               </div>
-            </section>
-            <section id="content" class="index-content-margin">
-                <?php
-                include "inc.front_store.php";
-                ?>
             </section>
         </main>
         
