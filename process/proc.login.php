@@ -17,7 +17,7 @@ include "../inc.nav.php";
     //msg_error set to global because it has to be accessed in loginfail_frag.php
     global $msg_error;
     $msg_error = "NO ERROR";
-
+    
 
 
     ///////////////////////
@@ -26,7 +26,7 @@ include "../inc.nav.php";
     if (empty($post_req["login_Email"]) ||
         empty($post_req["login_Password"])) {
 
-        $msg_error = "!! Invalid login data !!";
+        $msg_error = "Invalid login data";
     } else {
         // Sanitize Email
         $Email = sanitize_input($post_req["login_Email"]);
@@ -100,7 +100,7 @@ include "../inc.nav.php";
     //  Return     :    $msg_error      = should return "NO ERROR" unless error thrown
     //                  $status         = should return "true" unless error thrown
     function retrieve_from_db($Email, $Password_Raw, $msg_error, $status) {
-
+ 
         // Read db access file from ini
         $config = parse_ini_file('db.ini');                 // FOR LOCAL DEV
     //        $config = parse_ini_file('/home/dev/db.ini');             // FOR SERVER DEPLOYED

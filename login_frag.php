@@ -60,6 +60,8 @@
         </main>
 
         <br>
+        <br>
+        <br>
         <?php
             include "inc.footer.php";
         ?>

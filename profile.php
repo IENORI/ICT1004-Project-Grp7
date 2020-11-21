@@ -6,7 +6,7 @@ TOBEIMPLEMENTED:
 
 TODO:
     CHECK IF ADMIN GIVE MORE FUNCTIONS
-    EDIT ACCOUNT INFORMATION
+    EDIT ACCOUNT INFORMATION (WIP)
 -->
 
 
@@ -37,6 +37,7 @@ TODO:
     }
     catch (Exception $e){
         echo "UNAUTHORIZED ACCESS / PAGE NOT FOUND";
+        echo "Go back home page";
     }
 ?>
 
@@ -66,6 +67,14 @@ TODO:
                 <div class="col-auto">
                     <div class="card">
                         <div class="card-body">
+                            <h5 class="card-title">Email</h5>
+                            <p class="card-text"> <?php echo $Email ?></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="card">
+                        <div class="card-body">
                             <h5 class="card-title">First name</h5>
                             <p class="card-text"><?php echo $Fname ?></p>
                         </div>
@@ -81,7 +90,7 @@ TODO:
                 </div>
             </div>
             <br>
-            <a href="#" class="btn btn-primary">Edit Account information</a> <!--TO BE IMPLEMENTED-->
+            <a href="profileedit.php" class="btn btn-primary">Edit Account information</a> <!--TO BE IMPLEMENTED-->
             <br>
             <br>
             <a href="logout.php" class="btn btn-danger">Log out</a>
