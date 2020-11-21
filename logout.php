@@ -4,6 +4,8 @@
 -->
 
 <?php
+    include "inc.head.php";
+    include "inc.nav.php";
     session_start();
     session_destroy();
     $_SESSION = []; 
@@ -11,15 +13,7 @@
 
 <!DOCTYPE html>
 <html>
-    <header>
-        <?php 
-            include "inc.head.php";
-        ?>
-    </header>
     <div class="body">
-        <?php 
-            include "inc.nav.php";
-        ?>
         <br>
         <div class="container">
             <div class="jumbotron">

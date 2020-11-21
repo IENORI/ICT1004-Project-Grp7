@@ -7,6 +7,8 @@
 -->
 
 <?php
+    include "inc.head.php";
+    
     session_start();
     //If session found
     if(isset($_SESSION['SessionId'])){
