@@ -90,7 +90,7 @@ TODO:
                 </div>
             </div>
             <br>
-            <a href="profileedit.php" class="btn btn-primary">Edit Account information</a> <!--TO BE IMPLEMENTED-->
+            <a href="profileedit.php" class="btn btn-primary">Edit Account information</a>
             <br>
             <br>
             <a href="logout.php" class="btn btn-danger">Log out</a>
