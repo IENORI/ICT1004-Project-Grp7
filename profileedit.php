@@ -16,16 +16,17 @@
      *   suggest to check proc.login.php line 148 onwards
      */
     //initializing session variables
-    try {
+    if(isset($_SESSION['UID'])){
         $UID = $_SESSION['UID'];
         $Email = $_SESSION['Email'];
         $Fname = $_SESSION['Fname'];
         $Lname = $_SESSION['Lname'];
         $IsAdmin = $_SESSION['IsAdmin'];
     }
-    catch (Exception $e){
+    else{
         echo "UNAUTHORIZED ACCESS / PAGE NOT FOUND";
         echo "Go back home page";
+        exit();
     }
 ?>
 
