@@ -47,10 +47,10 @@
         Page content
         -
         -->
-        <main>
+        <main id="content-wrapper">
             <section id="hero_splash" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(media/image/mainpage.jpeg);">
     <!--        <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(https://source.unsplash.com/2560x1600/?cat);">-->
-              <div class="container-fluid container-fluid-max">
+              <div class="container-fluid container-fluid-max p-4">
                 <div class="row">
                   <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <h1 class="text-white">Find a friend for life!</h1>
@@ -68,8 +68,6 @@
         <?php
             include "inc.footer.php";
         ?>
-        
-        
-        
+
     </body>
 </html>
