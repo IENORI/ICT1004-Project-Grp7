@@ -23,7 +23,7 @@
         include("profile.php");
     }
     else{
-        echo "SESSION NOT FOUND";
+//        echo "SESSION NOT FOUND";
         include("login_frag.php");
     }
 ?>
