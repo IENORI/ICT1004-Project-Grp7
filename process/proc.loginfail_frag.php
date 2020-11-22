@@ -10,7 +10,7 @@ LOGIN FAILURE FRAGMENT CONFIRMATION PAGE
     <br>
     <div class="container">
         <div class="jumbotron">
-          <h1 class="display-3">Whoops,</h1>
+          <h2>Whoops,</h2>
             <p class="lead">Error detected when logging you in.</p>
           <hr class="my-4">
           <p> <?php echo $msg_error; ?></p>

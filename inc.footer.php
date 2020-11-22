@@ -5,14 +5,15 @@ Footer common
 -->
 
 <!-- Footer -->
-<footer class="page-footer font-small blue-grey lighten-5">
-    <div style="background-color: #21d192;">
+<footer class="page-footer font-small bg-light">
+<!--    <div style="background-color: #21d192;">-->
+    <div class="bg-primary text-white">
         <div class="container">
             <div class="row py-4 d-flex align-items-center">
                 
                 
                 <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
-                    <h6 class="mb-0">Get connected with us on social networks!</h6>
+                    <h6 class="mb-0 text-white">Get connected with us on social networks!</h6>
                 </div>
                 
                 

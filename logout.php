@@ -17,7 +17,7 @@
         <br>
         <div class="container">
             <div class="jumbotron">
-              <h1 class="display-3">Successfully logged out</h1>   
+              <h2>Successfully logged out</h2>
               <hr class="my-4">
               <p class="lead">
                   <a class="btn btn-primary btn-lg" href="index.php" role="button">Home</a>

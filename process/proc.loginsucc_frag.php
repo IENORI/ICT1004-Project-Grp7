@@ -11,7 +11,7 @@ LOGIN SUCCESS FRAGMENT CONFIRMATION PAGE
     <br>
     <div class="container">
         <div class="jumbotron">
-          <h1 class="display-3">Welcome back, <?php echo $Fname ; ?></h1>   
+          <h2>Welcome back, <?php echo $Fname ; ?></h2>
           <p class="lead">These pets are looking up at you, don't let them down.</p>
           <hr class="my-4">
           <p>AdoptCat@SG have cared for over 200 needy animals every month. Adopt a companion and change lives. It's in your hands.</p>
