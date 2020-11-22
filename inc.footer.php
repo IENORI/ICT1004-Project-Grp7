@@ -72,6 +72,6 @@ Footer common
     </div>
   </div>
   <div class="footer-copyright text-center text-black-50 py-3">
-      © 2020 Copyright: AdoptACatSG
+      © 2020 Copyright: Cat Sanctuary SG
   </div>
 </footer>

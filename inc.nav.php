@@ -6,7 +6,7 @@
 <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
         <img id="nav-logo" src="../media/icon/cat.svg" width="30" height="30" alt="CAT">
-        AdoptCat@SG
+        Cat Sanctuary
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggle">
         <span class="navbar-toggler-icon"></span>
