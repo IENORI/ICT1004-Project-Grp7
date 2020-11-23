@@ -119,10 +119,10 @@
                         <p>
                             blah blah
                         </p>
-                        <h4>Find us @</h4>
+<!--                        <h4>Find us @</h4>
                         <iframe width="200" height="180"
                             src="https://maps.google.com/maps?q=sit%20singapore&t=&z=13&ie=UTF8&iwloc=&output=embed">
-                        </iframe>
+                        </iframe>-->
                     </div>
                 </div>
             </div>
