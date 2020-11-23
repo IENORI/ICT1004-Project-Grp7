@@ -3,7 +3,7 @@
         ADD THE IMAGES INTO OUR MEDIA DIRECTORY: http://www.pngall.com/kitten-png
 -->
 <?php
-    include "inc.sessionauth.php";
+    include "inc.sessionauthless.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">

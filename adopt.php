@@ -1,5 +1,5 @@
 <?php
-    include "inc.sessionauth.php";
+    include "inc.sessionauthless.php";
 ?>
 
 <!DOCTYPE html>

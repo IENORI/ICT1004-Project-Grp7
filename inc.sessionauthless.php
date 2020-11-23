@@ -33,5 +33,12 @@
         $Lname = $_SESSION['Lname'];
         $IsAdmin = $_SESSION['IsAdmin'];
     }
+    else{
+        $UID = "";
+        $Email = "";
+        $Fname = "";
+        $Lname = "";
+        $IsAdmin = "";
+    }
 ?>
 
