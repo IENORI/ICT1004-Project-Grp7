@@ -2,7 +2,9 @@
     TODO:
         ADD THE IMAGES INTO OUR MEDIA DIRECTORY: http://www.pngall.com/kitten-png
 -->
-
+<?php
+    include "inc.sessionauth.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>

@@ -1,3 +1,6 @@
+<?php
+    include "inc.sessionauth.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -38,6 +41,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="login.php">
                                     <img id="nav-logo" src="media/icon/face-white-48dp.svg" width="30" height="30" alt="LOGIN">
+                                    <?php echo $Fname; ?>
                                 </a>
                             </li>
                         </ul>
