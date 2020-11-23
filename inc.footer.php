@@ -3,6 +3,76 @@
 Footer common 
 -
 -->
-<footer class="container text-center">
-    <p><em>Copyright &copy; 2020 CatSec</em></p>
+
+<!-- Footer -->
+<footer id="footer-wrapper" class="navbar page-footer justify-content-center align-items-end bg-light p-0 mt-auto">
+<!--    <div class="container-fluid row justify-content-center align-items-end bg-light">-->
+<!--            <div class=" col-md-8 p-0 d-flex">-->
+<!--                <div class="align-items-start col-md-4 text-center text-md-left mb-2 mb-md-0 p-3">-->
+<!--                    <h6 class="mb-0">Get connected with us on social networks!</h6>-->
+<!--                </div>-->
+<!---->
+<!---->
+<!--                <div class="col-md-4 text-center text-md-right mb-2 mb-md-0 p-3">-->
+<!--                    <ADD MORE SOCIALS-->
+<!--                    <span> ADD SOCIALS HERE USE ICON </span>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--    </div>-->
+
+    <div class="container-fluid row justify-content-center text-center align-items-start text-md-left mt-5">
+            <div class="col-md-3 col-xl-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">CAT SANCTUARY</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    Our mission is to prevent cruelty to promote kindness to animals.
+                </p>
+            </div>
+
+            <div class="col-md-3 col-xl-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">Useful links</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>
+                    <a href="../login.php">Your Account</a>
+                </p>
+                <p>
+                    <a href="#">Become an Affiliate</a>
+                </p>
+                <p>
+                    <a href="#">Taking care of cats</a>
+                </p>
+                <p>
+                    <a href="#">About Us</a>
+                </p>
+            </div>
+
+            <div class="col-md-3 col-xl-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>10 Dover Drive Singapore 138683</p>
+                <p>CatSanctuary@sit.com</p>
+                <p>+65 9988 7766</p>
+                <p>+65 9988 7755</p>
+            </div>
+
+            <div class="col-md-3 col-xl-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">Social Media</h6>
+                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+                <p>FACEBOOK FACEBOOK</p>
+                <p>TWITTER TWITTER</p>
+                <p>INSTAGRAM INSTAGRAM</p>
+            </div>
+
+<!---->
+<!--            <div class="col-md-2 mb-3">-->
+<!--                <h6 class="text-uppercase font-weight-bold">Find us @</h6>-->
+<!--                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
+<!--                <iframe width="200" height="180"-->
+<!--                        src="https://maps.google.com/maps?q=sit%20singapore&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>-->
+<!--            </div>-->
+    </div>
+
+    <div class="container-fluid row footer-copyright text-center justify-content-center py-3 text-white bg-primary">
+        <span class="col-md-8"> Cat Sanctuary SG © 2020 </span>
+    </div>
 </footer>

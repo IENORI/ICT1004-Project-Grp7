@@ -17,7 +17,7 @@
                 <nav id ="navbar" class="navbar navbar-expand-lg navbar-dark">
                     <a class="navbar-brand" href="/">
                         <img id="nav-logo" src="media/icon/cat.svg" width="30" height="30">
-                        CatSec
+                        Cat Sanctuary
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navBarToggle">
                         <span class="navbar-toggler-icon"></span>
@@ -47,15 +47,15 @@
         Page content
         -
         -->
-        <main>
+        <main id="content-wrapper">
             <section id="hero_splash" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(media/image/mainpage.jpeg);">
     <!--        <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(https://source.unsplash.com/2560x1600/?cat);">-->
-              <div class="container-fluid container-fluid-max">
+              <div class="container-fluid container-fluid-max p-4">
                 <div class="row">
                   <div class="col-12 col-md-8 col-lg-6 col-xl-5">
                     <h1 class="text-white">Find a friend for life!</h1>
                     <div class="mt-3">
-                        <h6 class="text-white">CatSec is a governmental, registered animal welfare charity. We provide shelter for cats with no home and urge kind-hearted user to give these furry balls a new home! </h6>
+                        <h6 class="text-white">Cat Sanctuary is a governmental, registered animal welfare charity. We provide shelter for cats with no home and urge kind-hearted user to give these furry balls a new home! </h6>
                         <!--<a class="btn bg-red text-white mr-2" href="" role="button">What are they?</a>-->
                         <!--<a class="btn bg-red text-white" href="" role="button">Should I fear them?</a>--> 
                     </div>
@@ -68,8 +68,6 @@
         <?php
             include "inc.footer.php";
         ?>
-        
-        
-        
+
     </body>
 </html>

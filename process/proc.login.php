@@ -2,17 +2,22 @@
     // Hide PHP warnings/errors from being shown in HTML
 //    error_reporting(E_ERROR);
 
+include "../inc.head.php";
+include "../inc.nav.php";
+
     /////////////////
     // Declaration //
     /////////////////
     $post_req = $_POST;
 
-    $Email = "";
-    $Password_raw = ""; // raw plain text
+    $Email = $Password_raw = ""; // raw plain text
 
     $status = false;
+    
+    //msg_error set to global because it has to be accessed in loginfail_frag.php
+    global $msg_error;
     $msg_error = "NO ERROR";
-
+    
 
 
     ///////////////////////
@@ -21,7 +26,7 @@
     if (empty($post_req["login_Email"]) ||
         empty($post_req["login_Password"])) {
 
-        $msg_error = "!! Invalid login data !!";
+        $msg_error = "Invalid login data";
     } else {
         // Sanitize Email
         $Email = sanitize_input($post_req["login_Email"]);
@@ -77,7 +82,7 @@
     function verify_password($pwd_db, $pwd_raw, $msg_error) {
 
         if (!password_verify($pwd_raw, $pwd_db)){
-            $errorMsg = "Email not found or password does not match.";
+            $msg_error = "Email not found or password does not match.";
         }
 
         return array($pwd_db, $msg_error);
@@ -95,7 +100,7 @@
     //  Return     :    $msg_error      = should return "NO ERROR" unless error thrown
     //                  $status         = should return "true" unless error thrown
     function retrieve_from_db($Email, $Password_Raw, $msg_error, $status) {
-
+ 
         // Read db access file from ini
         $config = parse_ini_file('db.ini');                 // FOR LOCAL DEV
     //        $config = parse_ini_file('/home/dev/db.ini');             // FOR SERVER DEPLOYED
@@ -117,32 +122,48 @@
             if (!$res = $stmt -> execute()) {
                 // ERROR - Failed to execute MySQL statement (Most common when duplicate entry)
                 $msg_error = "!! stmt failed to execute >> ". $stmt -> error . " << !!!";
+                
+                //invoking login failure fragment
+                include("../process/proc.loginfail_frag.php");
             } else {
                 // Fetch row regardless if empty
                 $res = $stmt -> get_result();
                 $row = $res->fetch_assoc();
                 if (empty($row)) {
                     // ERROR - Checks if row is "empty" and throws error (Email not found)
-                    $msg_error = "!! Email not found or password does not match !!";
-                    echo "!!! email wrong !!!";
+                    $msg_error = "Email not found or password does not match.";
+                    
+                    //invoking login failure fragment
+                    include("../process/proc.loginfail_frag.php");
                 } else {
                     // Retrieve hashed password from DB
                     $Password_Hashed_DB = $row["Pwd"];
                     // Check if hashed and raw matches
                     if (!password_verify($Password_Raw, $Password_Hashed_DB)) {
                         // ERROR - Throws error if password does not match DB
-                        $msg_error = "!! Email not found or password does not match !!";
-                        echo "!!! pwd wrong !!!";
-                    } else {
-                        $Email = $row["Email"];
-                        $Fname = $row["Fname"];
-                        $IsAdmin = $row["IsAdmin"];
-                        echo "Yes";                     //  <<-- Stopped here, fetch email & password with appropriate flows (echo)
+                        $msg_error = "Email not found or password does not match.";
                         
+                        //invoking login failure fragment
+                        include("../process/proc.loginfail_frag.php");
+                    } else { //password matches and user is verified
+                        $UID = $row['UID'];
+                        $Email = $row['Email'];
+                        $Fname = $row['Fname'];
+                        $Lname = $row['Lname'];
+                        $IsAdmin = $row['IsAdmin'];
+                        
+                        //Starting a session with the log on-ed variable
                         session_start();
-                        $_SESSION['email'] = $Email;
-                        echo '<br> the session id is:';
-                        echo session_id();
+                        $_SESSION['UID'] = $UID;
+                        $_SESSION['Email'] = $Email;
+                        $_SESSION['Fname'] = $Fname;
+                        $_SESSION['Lname'] = $Lname;
+                        $_SESSION['IsAdmin'] = $IsAdmin;
+                        $_SESSION['SessionId'] = session_id();
+                        //echo 'the session id is: ' . $_SESSION["SessionId"];
+                        
+                        //invoking login success fragment
+                        include("../process/proc.loginsucc_frag.php");
                     }
 
                     $stmt->close();

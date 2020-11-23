@@ -1,69 +1,28 @@
-<?php
-    session_start();
+<!--
+    LOGIN.PHP HAS 2 DIFFERENT FUNCTIONS:
+    # IF THERE IS AN AVAILABLE SESSION(USER LOGGED ON) 
+        THEN IT WILL REDIRECT TO PROFILE.PHP
+    # IF NO AVAILABLE SESSION, THEN IT WILL DISPLAY LOGIN PAGE
+        THEN IT WILL DISPLAY LOGIN_FRAG.PHP
+-->
 
-    if(session_status() != PHP_SESSION_NONE){ //If the user is logged on
-        echo "SESSION  ID: " . session_id();
+<?php
+    include "inc.head.php";
+    
+    session_start();
+    //If session found
+    if(isset($_SESSION['SessionId'])){
+        echo "SESSION EXIST";
+        /*//used for debugging
+            session_destroy();
+            session_unset();
+         */
+         
+        
+        include("profile.php");
+    }
+    else{
+        echo "SESSION NOT FOUND";
+        include("login_frag.php");
     }
 ?>
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <?php
-            include "inc.head.php";
-        ?>
-    </head>
-    <body>
-
-        <?php
-            include "inc.nav.php";
-        ?>
-        
-        <!--
-        -
-        Page content
-        -
-        -->
-        <br>
-        <div class="container-md">
-            <nav aria-label="breadcrumb">
-                <ol class="breadcrumb">
-                    <li class="breadcrumb-item"><a href="/">Home</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Login</li>
-                </ol>
-            </nav>
-        </div>
-
-        <main class="container-md">
-            <div class="row justify-content-center">
-                <div class="col-sm-6">
-                    <div class="card">
-                        <h4 class="card-header bg-success text-white">Login</h4>
-                        <div class="card-body" style="padding-bottom: 0">
-                            <form action="process/proc.login.php" method="post">
-                                <div class="form-group">
-                                    <label for="login_Email">Email address :</label>
-                                    <input required type="email" class="form-control" id="login_Email" name="login_Email" placeholder="Enter email">
-                                </div>
-                                <div class="form-group">
-                                    <label for="login_Password">Password :</label>
-                                    <input required maxlength="32" minlength="8" type="password" class="form-control" id="login_Password" name="login_Password" placeholder="Password">
-                                </div>
-                                <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Submit</button>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="card-footer text-muted">
-                            <a href="signup.php" class="card-link text-info">Sign up for an account, its free!</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </main>
-
-        <?php
-            include "inc.footer.php";
-            
-        ?>
-    </body>
-</html>
