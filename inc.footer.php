@@ -33,16 +33,16 @@ Footer common
                 <h6 class="text-uppercase font-weight-bold">Useful links</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
+                    <a href="../aboutus.php">About Us</a>
+                </p>
+                <p>
+                    <a href="../services.php">Services</a>
+                </p>
+                <p>
                     <a href="../login.php">Your Account</a>
                 </p>
                 <p>
-                    <a href="#">Become an Affiliate</a>
-                </p>
-                <p>
                     <a href="#">Taking care of cats</a>
-                </p>
-                <p>
-                    <a href="#">About Us</a>
                 </p>
             </div>
 
@@ -62,14 +62,6 @@ Footer common
                 <p>TWITTER TWITTER</p>
                 <p>INSTAGRAM INSTAGRAM</p>
             </div>
-
-<!---->
-<!--            <div class="col-md-2 mb-3">-->
-<!--                <h6 class="text-uppercase font-weight-bold">Find us @</h6>-->
-<!--                <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">-->
-<!--                <iframe width="200" height="180"-->
-<!--                        src="https://maps.google.com/maps?q=sit%20singapore&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>-->
-<!--            </div>-->
     </div>
 
     <div class="container-fluid row footer-copyright text-center justify-content-center py-3 text-white bg-primary">
