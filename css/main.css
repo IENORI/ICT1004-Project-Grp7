@@ -1,20 +1,60 @@
 /*USER DEFINED CSS*/
-.image_thumbnail{
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.rounded figure-img img-fluid{
     border-style: double;
     border-color: gray;
     vertical-align: top;
 }
 .image_popup{
     position: absolute;
-    height: 100px;
-    right: 10px;
-    bottom: 305px;
+    height: 200px;
+    right: 2px;
+    bottom: 300px;
     z-index: 1;
 }
 
 .image_popup img{
-    height: 500px;
-    border: 10px solid #D3D3D3;
-    border-radius: 5px;
+    height: 400px;
+    border: 10px solid #008080;
+    border-radius: 100px;
+}
+.adoptCat{
+    text-align: center;
+    font-weight: bold;    
+}
+figure img{
+    max-width: 100%;
+    transition: all 0.3s;
+    display: block;
+    transform: scale(1);
 }
 
+
+.figure h4{
+    text-align: center;
+    font-style: italic;
+}
+.figure{
+    margin: auto;
+    overflow: hidden;
+
+}
+.appointmentCat{
+    text-align: center;
+ }
+ figcaption{
+     text-align: left;
+ }
+ 
+
+.figure:hover img {
+    transform: scale(1.1);
+}

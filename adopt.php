@@ -16,6 +16,8 @@
         Page content
         -
         -->
+      
+        
         <br>
         <div class="container">
             <nav aria-label="breadcrumb">
@@ -25,8 +27,130 @@
                 </ol>
             </nav>
         </div>
-        
+        <br>
+        <h1 class="adoptCat">😸Cats for adoption😸</h1>
+        <hr>
+        <h6 class="appointmentCat">Hello there! We are so happy and delightful for you to find a friend for life! 
+            Adoption are carried out through appointments only. To start off, browse further on this page to choose 
+            your preferred adoption. Adoption are <b>ONLY LIMITED TO ONE PER APPOINTMENT!!!😻😻😻</b></h6>
+        <br>
         <main class="container">
+        <div class="row">
+        <div class="col-sm"  align="center">
+           
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                
+           
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed: Persian<br>Weight:<br>
+                </figcaption>
+            
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        <div class="col-sm" align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/siamese_cat_small.jpg" class="rounded figure-img img-fluid">
+                
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed: Siamese<br>Weight:<br>
+                </figcaption>
+                
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        <div class="col-sm" align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/burmese_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed: Burmese<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-sm"  align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed:<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        <div class="col-sm" align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed:<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        <div class="col-sm" align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed:<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        </div>
+        <br>
+        <div class="row">
+        <div class="col-sm"  align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed:<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        <div class="col-sm" align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed:<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        <div class="col-sm" align="center">
+            <figure class="figure">
+                <h4>Cat1</h4>
+                <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
+                <figcaption class="figure-caption">Name:<br>Description:<br>
+                    Date of birth:<br>Breed:<br>Weight:<br>
+                </figcaption>
+                <br>
+                <a class="btn btn-primary" href="appointment.php">Make appointment</a>
+            </figure>
+        </div>
+        </div>
+        </main>
+        
+       <!-- <main class="container">
             <div class="row">
         <div class="col-sm"  align="center">
             <figure class="figure">
@@ -43,7 +167,7 @@
                     
                
 
-        </main>
+        </main> -->
 
         <?php
             include "inc.footer.php";
