@@ -1,3 +1,7 @@
+<?php
+    include "inc.sessionauthless.php";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
