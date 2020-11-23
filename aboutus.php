@@ -118,10 +118,10 @@
                             <h5 class="mb-0">Chandran P.</h5>
                             <span class="small text-uppercase text-muted">INSERT STUD ID</span>
                             <ul class="social mb-0 list-inline mt-3">
-                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                              <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                             </ul>
                           </div>
                         </div>
