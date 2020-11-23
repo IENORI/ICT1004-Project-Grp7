@@ -24,37 +24,14 @@
                 include "inc.nav.php";
             ?>
 
-            <div id="breadcrumb-wrapper" class="container mt-3">
+<!--            <div id="breadcrumb-wrapper" class="container mt-3">
                 <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                         <li class="breadcrumb-item"><a href="/">Home</a></li>
                         <li class="breadcrumb-item active" aria-current="page">About Us</li>
                     </ol>
                 </nav>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col-6">
-                        <h2> About us </h2>
-                    </div>
-                    <div class="col-6">
-                        <h4>Work with our hearts</h4>
-                        <p>
-                            blah blah
-                        </p>
-                        <h4>Passionate about cats</h4>
-                        <p>
-                            blah blah
-                        </p>
-                        <h4>Find us @</h4>
-                        <iframe width="200" height="180"
-                            src="https://maps.google.com/maps?q=sit%20singapore&t=&z=13&ie=UTF8&iwloc=&output=embed">
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            <br>
-            <br>
+            </div>-->
             <!--Our Team-->
             <div class="bg-light py-5">
                 <div class="container py-5">
@@ -128,6 +105,29 @@
                     </div>
                 </div>
             </div>
+            <div class="container" style="padding-top: 50px;">
+                <div class="row">
+                    <div class="col-6">
+                        <h2> About us </h2>
+                    </div>
+                    <div class="col-6">
+                        <h4>Work with our hearts</h4>
+                        <p>
+                            blah blah
+                        </p>
+                        <h4>Passionate about cats</h4>
+                        <p>
+                            blah blah
+                        </p>
+                        <h4>Find us @</h4>
+                        <iframe width="200" height="180"
+                            src="https://maps.google.com/maps?q=sit%20singapore&t=&z=13&ie=UTF8&iwloc=&output=embed">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
             <?php
                 include "inc.footer.php";
             ?>
