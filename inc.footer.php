@@ -51,7 +51,7 @@ Footer common
                 <hr class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <a href="http://maps.google.com/?q=Singapore Institute of Technology">
                     <p>
-                       <i class="fa fa-map-marker mr-3" aria-hidden="true"></i>
+                       <i class="fa fa-map-marker mr-4" aria-hidden="true"></i>
                        10 Dover Drive Singapore 138683
                     </p>
                 </a>
