@@ -22,10 +22,10 @@
                 <a class="nav-link" href="../adopt.php">Adopt</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../aboutus.php">About</a>
+                <a class="nav-link" href="../services.php">Services</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="../services.php">Services</a>
+                <a class="nav-link" href="../aboutus.php">About</a>
             </li>
         </ul>
         <ul class="navbar-nav ml-auto">
