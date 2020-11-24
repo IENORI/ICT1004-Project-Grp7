@@ -45,7 +45,7 @@
                         <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4">
-                              <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
+                              <img src="media/image/free-vector-business-man-avatar-silhouette.jpg"
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Koh Jia Cheng</h5>
                             <span class="small text-uppercase text-muted">2000665</span>
@@ -60,7 +60,7 @@
                         <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4">
-                              <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
+                              <img src="media/image/free-vector-business-man-avatar-silhouette.jpg"
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Foong Jun Hui</h5>
                             <span class="small text-uppercase text-muted">2001267</span>
@@ -75,7 +75,7 @@
                        <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4">
-                              <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
+                              <img src="media/image/free-vector-business-man-avatar-silhouette.jpg"
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Daniel Tan</h5>
                             <span class="small text-uppercase text-muted">2001240</span>
@@ -90,7 +90,7 @@
                        <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4">
-                              <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
+                              <img src="media/image/free-vector-business-man-avatar-silhouette.jpg"
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Chandran P.</h5>
                             <span class="small text-uppercase text-muted">2002947</span>
