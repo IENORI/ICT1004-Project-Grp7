@@ -24,14 +24,14 @@
                 include "inc.nav.php";
             ?>
 
-<!--            <div id="breadcrumb-wrapper" class="container mt-3">
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="/">Home</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">About Us</li>
-                    </ol>
-                </nav>
-            </div>-->
+<!--            <div id="breadcrumb-wrapper" class="container mt-3">-->
+<!--                <nav aria-label="breadcrumb">-->
+<!--                    <ol class="breadcrumb">-->
+<!--                        <li class="breadcrumb-item"><a href="/">Home</a></li>-->
+<!--                        <li class="breadcrumb-item active" aria-current="page">About Us</li>-->
+<!--                    </ol>-->
+<!--                </nav>-->
+<!--            </div>-->
             <!--Our Team-->
             <div class="bg-light py-5">
                 <div class="container py-5">
@@ -63,7 +63,7 @@
                               <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Foong Jun Hui</h5>
-                            <span class="small text-uppercase text-muted">INSERT STUD ID</span>
+                            <span class="small text-uppercase text-muted">2001267</span>
                             <ul class="social mb-0 list-inline mt-3">
                               <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
                               <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
@@ -77,8 +77,8 @@
                           <div class="bg-white rounded shadow-sm py-5 px-4">
                               <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                            <h5 class="mb-0">Daniel Tan Jun Hao</h5>
-                            <span class="small text-uppercase text-muted">INSERT STUD ID</span>
+                            <h5 class="mb-0">Daniel Tan</h5>
+                            <span class="small text-uppercase text-muted">2001240</span>
                             <ul class="social mb-0 list-inline mt-3">
                               <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
                               <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
@@ -93,7 +93,7 @@
                               <img src="https://www.uidownload.com/files/762/596/883/free-vector-business-man-avatar-silhouette.jpg" 
                                    alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
                             <h5 class="mb-0">Chandran P.</h5>
-                            <span class="small text-uppercase text-muted">INSERT STUD ID</span>
+                            <span class="small text-uppercase text-muted">2002947</span>
                             <ul class="social mb-0 list-inline mt-3">
                               <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
                               <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
