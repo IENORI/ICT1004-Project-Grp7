@@ -30,13 +30,14 @@
                     <li class="breadcrumb-item active" aria-current="page">Adopt</li>
                 </ol>
             </nav>
-        </div>
+        
         <br>
         <h1 class="adoptCat">😸Cats for adoption😸</h1>
         <hr>
         <h6 class="appointmentCat">Hello there! We are so happy and delightful for you to find a friend for life! 
             Adoption are carried out through appointments only. To start off, browse further on this page to choose 
             your preferred adoption. Adoption are <b>ONLY LIMITED TO ONE PER APPOINTMENT!!!😻😻😻</b></h6>
+        </div>
         <br>
         <main class="container">
         <div class="row">
