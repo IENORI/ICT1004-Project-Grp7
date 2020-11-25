@@ -54,6 +54,17 @@
                         <hr class="my-4">
                         
                         <div class="form-group">
+                              <fieldset disabled="">
+                                <label for="disabledInput">Current Phone Number:</label>
+                                <input type="text" class="form-control" id="disabledInput" placeholder="<?php echo $HPNum ;?>">
+                              </fieldset>
+                            <label for="Edit_Email">New Phone Number: </label>
+                            <input required maxlength="45" type="text" class="form-control" id="Edited_Lname" name="Edited_Lname">
+                        </div>
+                        
+                        <hr class="my-4">
+                        
+                        <div class="form-group">
                             <button type="submit" class="btn btn-warning" disabled>Edit</button>
                         </div>
                     </form>
