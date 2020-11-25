@@ -1,9 +1,5 @@
-<!--
-    TODO: Amend the correct error for the user instead of showing the whole error
--->
-
 <?php 
-    INCLUDE "../inc.sessionauth.php";
+    include "../inc.sessionauth.php";
     include "../inc.head.php";
     include "../inc.nav.php";
     
@@ -17,9 +13,16 @@
     if($_SERVER["REQUEST_METHOD"] == "POST"){
         if(!empty($_POST['Edited_Email'])){
             $Edited_Email = sanitize_input($_POST['Edited_Email']);
+            
+            //Additional check to make sure e-mail address is well formed.
+            if(!filter_var($Edited_Email, FILTER_VALIDATE_EMAIL))
+            {
+                $error_msg .= "Invalid email format. <br>";
+                $success = false;
+            }
         }
         else{
-            $error_msg .= "Email required!";
+            $error_msg .= "Email required! <br>";
             $success = false;
         }
         if(!empty($_POST['Edited_Fname'])){
@@ -29,14 +32,20 @@
             $Edited_Lname = sanitize_input($_POST['Edited_Lname']);
         }
         else{
-            $error_msg .= "Last Name Required!";
+            $error_msg .= "Last Name Required! <br>";
             $success = false;
         }
         if(!empty(($_POST['Edited_HPNum']))){
             $Edited_HPNum = sanitize_input($_POST['Edited_HPNum']);
+            
+            //Additional check for phone number
+            if($_POST['Edited_HPNum'] < 60000000 || $_POST['Edited_HPNum'] < 99999999){
+                $error_msg .= "Invalid Phone Number <br>";
+                $success = false;
+            }
         }
         else{
-            $error_msg .= "Handphone Number Required!";
+            $error_msg .= "Handphone Number Required! <br>";
             $success = false;
         }
         
@@ -83,7 +92,7 @@
                 $error_msg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                 $success = false;
                 if($stmt->errno == 1062){
-                    $error_msg = "There is a duplicate entry in one of your fields.";
+                    $error_msg = "The field(s) you have just changed have already been taken";
                 }
                 
                 include "proc.profileeditfail_frag.php";
