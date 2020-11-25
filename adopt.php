@@ -1,7 +1,26 @@
 <?php
     include "inc.sessionauthless.php";
 ?>
+<?php
+$host = "127.0.0.1"; //IP of your database
+$userName = "sqldev"; //Username for database login
+$userPass = "ict1004grp7"; //Password associated with the username
+$database = "adoptcatsg"; //Your database name
 
+$connectQuery = mysqli_connect($host,$userName,$userPass,$database);
+
+if(mysqli_connect_errno()){
+    echo mysqli_connect_error();
+    exit();
+}else{
+    $selectQuery = "SELECT * FROM `cat` ORDER BY `CID` ASC";
+    $result = mysqli_query($connectQuery,$selectQuery);
+    if(mysqli_num_rows($result) > 0){
+    }else{
+        $msg = "No Record found";
+    }
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -39,6 +58,7 @@
             your preferred adoption. Adoption are <b>ONLY LIMITED TO ONE PER APPOINTMENT!!!😻😻😻</b></h6>
         </div>
         <br>
+        
         <main class="container">
         <div class="row">
         <div class="col-sm"  align="center">
@@ -46,11 +66,24 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
+       
            
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed: Persian<br>Weight:<br>
-                </figcaption>
+                
             
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
@@ -61,9 +94,21 @@
                 <h4>Cat1</h4>
                 <img src="media/image/siamese_cat_small.jpg" class="rounded figure-img img-fluid">
                 
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed: Siamese<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
@@ -73,9 +118,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/burmese_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed: Burmese<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
@@ -87,9 +144,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed:<br>Weight:<br>
-                </figcaption>
+               <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
@@ -98,9 +167,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed:<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
@@ -109,9 +190,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed:<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
@@ -123,9 +216,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed:<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
@@ -134,9 +239,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed:<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
@@ -145,9 +262,21 @@
             <figure class="figure">
                 <h4>Cat1</h4>
                 <img src="media/image/persian_cat_small.jpg" class="rounded figure-img img-fluid">
-                <figcaption class="figure-caption">Name:<br>Description:<br>
-                    Date of birth:<br>Breed:<br>Weight:<br>
-                </figcaption>
+                <figcaption class="figure-caption">
+                <table>
+                    <tbody>
+                        <?php
+                        $row = mysqli_fetch_assoc($result)?>
+                        <tr>Name: <?php echo $row['CatName']; ?></tr><br>
+                        <tr>Description: <?php echo $row['Description']; ?></tr><br>
+                        <tr>Breed <?php echo $row['CatType']; ?></tr><br>
+                        <tr>Age: <?php echo $row['Age']; ?></tr><br>
+                        
+                     
+                      
+                    </tbody>
+                </table>
+                     </figcaption>
                 <br>
                 <a class="btn btn-primary" href="appointment.php">Make appointment</a>
             </figure>
