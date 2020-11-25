@@ -150,6 +150,7 @@ include "../inc.nav.php";
                         $Email = $row['Email'];
                         $Fname = $row['Fname'];
                         $Lname = $row['Lname'];
+                        $HPNum = $row['HPNum'];
                         $IsAdmin = $row['IsAdmin'];
                         
                         //Starting a session with the log on-ed variable
@@ -159,6 +160,7 @@ include "../inc.nav.php";
                         $_SESSION['Fname'] = $Fname;
                         $_SESSION['Lname'] = $Lname;
                         $_SESSION['IsAdmin'] = $IsAdmin;
+                        $_SESSION['HPNum'] = $HPNum;
                         $_SESSION['SessionId'] = session_id();
                         //echo 'the session id is: ' . $_SESSION["SessionId"];
                         

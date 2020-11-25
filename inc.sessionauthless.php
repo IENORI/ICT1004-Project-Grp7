@@ -31,6 +31,7 @@
         $Email = $_SESSION['Email'];
         $Fname = $_SESSION['Fname'];
         $Lname = $_SESSION['Lname'];
+        $HPNum = $_SESSION['HPNum'];
         $IsAdmin = $_SESSION['IsAdmin'];
     }
     else{
@@ -38,6 +39,7 @@
         $Email = "";
         $Fname = "";
         $Lname = "";
+        $HPNum = "";
         $IsAdmin = "";
     }
 ?>
