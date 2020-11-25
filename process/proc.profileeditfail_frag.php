@@ -14,7 +14,7 @@ LOGIN FAILURE FRAGMENT CONFIRMATION PAGE
           <p class="lead">Error detected when updating your credentials</p>
           <p> <?php echo $error_msg; ?></p>
           <p class="lead">
-              <a class="btn btn-primary btn-lg" href="../profileedit.php" role="button">Back profile</a>
+              <a class="btn btn-primary btn-lg" href="../profileedit.php" role="button">Back to profile</a>
           </p>
         </div>
     </div>
