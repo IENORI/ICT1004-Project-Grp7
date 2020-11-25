@@ -15,7 +15,10 @@ include "inc.sessionauthless.php";
             <div class="hero-text">
                 <h3 style="color: white">ADOPTIONS NOW OPEN BY APPOINTMENT</h3>
                 <p>Adopt a cutie who will brighten your day!</p>
-                <button>More information > </button>
+                <form action="adopt.php">
+                    <button type="submit">More information > </button>
+                </form>
+                
             </div>
         </div>
 
