@@ -1,3 +1,7 @@
+<!--
+    TODO: Amend the correct error for the user instead of showing the whole error
+-->
+
 <?php 
     INCLUDE "../inc.sessionauth.php";
     include "../inc.head.php";
