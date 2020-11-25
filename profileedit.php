@@ -47,7 +47,7 @@
                         
                         <div class="form-group">
                             <label for="Edit_Email">Phone Number: </label>
-                            <input required maxlength="45" type="text" class="form-control" id="Edited_HPNum" name="Edited_HPNum"
+                            <input required max="99999999" min="60000000" type="number" class="form-control" id="Edited_HPNum" name="Edited_HPNum"
                                    value="<?php echo $HPNum ;?>">
                         </div>
                         

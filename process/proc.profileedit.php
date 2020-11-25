@@ -82,6 +82,9 @@
             if(!$stmt->execute()){
                 $error_msg = "Execute failed: (" . $stmt->errno . ") " . $stmt->error;
                 $success = false;
+                if($stmt->errno == 1062){
+                    $error_msg = "There is a duplicate entry in one of your fields.";
+                }
                 
                 include "proc.profileeditfail_frag.php";
             }
