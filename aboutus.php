@@ -111,9 +111,9 @@
                         <h2> About us </h2>
                     </div>
                     <div class="col-6">
-                        <h4>Work with our hearts</h4>
+                        <h4>Mission</h4>
                         <p>
-                            blah blah
+                            We aim to prevent cruelty
                         </p>
                         <h4>Passionate about cats</h4>
                         <p>
