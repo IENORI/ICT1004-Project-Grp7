@@ -27,7 +27,7 @@
 
             <main id="content-wrapper" class="container mb-3">
                 <div class="row justify-content-center">
-                    <div class="col-sm-6">
+                    <div class="col-md-8 col-xl-6">
                         <div class="card">
                             <h4 class="card-header bg-success text-white">Login</h4>
                             <div class="card-body" style="padding-bottom: 0">
