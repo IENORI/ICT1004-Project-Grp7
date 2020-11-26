@@ -83,7 +83,8 @@ figure img{
 
 /*Admin Nav View*/
 .dropdown:hover>.dropdown-menu {
-  display: block;
+    display: block;
+    margin-top: 0px;
 }
 
 .dropdown>.dropdown-toggle:active {
