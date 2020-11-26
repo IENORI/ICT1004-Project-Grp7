@@ -60,6 +60,9 @@ figure img{
 }
 
 
+
+
+
 /*About Us page*/
 .social-link {
   width: 30px;
@@ -79,4 +82,8 @@ figure img{
   background: #ddd;
   text-decoration: none;
   color: #555;
+}
+.appointmentImage{
+    border: 5px solid #008080;
+    border-radius: 10px;
 }
