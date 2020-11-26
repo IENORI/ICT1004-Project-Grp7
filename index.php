@@ -5,7 +5,7 @@ include "inc.sessionauthless.php";
 <html lang="en">
     <head>
         <?php
-            include "inc.head.php";
+        include "inc.head.php";
         ?>
         <!--CSS-->
         <link rel="stylesheet" href="css/index_css.css">
@@ -13,7 +13,7 @@ include "inc.sessionauthless.php";
     <body>
         <div id="parent-wrapper" class="d-flex flex-column min-vh-100">
             <?php
-                include "inc.nav.php";
+            include "inc.nav.php";
             ?>
 
             <!-- Main wrapper to help split from nav-->
@@ -26,13 +26,32 @@ include "inc.sessionauthless.php";
                         <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                     </div>
                 </div>
+
+                <div>
+                    <br>
+                </div>
+
+                <div class="index_row">
+                    <div class="index_column" style="background-color: #37b885;">
+                        <h3 class="index_text">345</h3>
+                        <p class = "index_text">Cats Rescued!</p>
+                    </div>
+                    <div class="index_column" style="background-color: #42c692;">
+                        <h3 class="index_text">98%</h3>
+                        <p class = "index_text">Adoption Rate!</p>
+                    </div>
+                    <div class="index_column" style="background-color: #37b885;">
+                        <h3 class="index_text">100%</h3>
+                        <p class = "index_text">Happy Adopters!</p>
+                    </div>
+                </div>
                 <?php
-                    include "services.php";
+                include "services.php";
                 ?>
             </main>
 
             <?php
-                include "inc.footer.php";
+            include "inc.footer.php";
             ?>
         </div>
     </body>

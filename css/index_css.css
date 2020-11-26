@@ -11,19 +11,19 @@
     text-align: center;
 }
 
-#index_column{
+.index_column{
     float:left;
     width:33.33%;
     padding:10px;
 }
 
-#index_row:after{
+.index_row:after{
     content:"";
     display:table;
     clear:both;
 }
 
-#index_row{
+.index_row{
     margin-left: 0px;
     margin-right: 0px;
 }
@@ -32,4 +32,9 @@
     .column{
         width:100%;
     }
+}
+
+.index_text{
+    text-align: center;
+    color:white;
 }
