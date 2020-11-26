@@ -36,9 +36,6 @@ Footer common
                     <a href="../aboutus.php">About Us</a>
                 </p>
                 <p>
-                    <a href="../services.php">Services</a>
-                </p>
-                <p>
                     <a href="../login.php">Your Account</a>
                 </p>
                 <p>

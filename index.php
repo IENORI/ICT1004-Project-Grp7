@@ -33,12 +33,12 @@ include "inc.sessionauthless.php";
 
                 <div class="index_row">
                     <div class="index_column" style="background-color: #37b885;">
-                        <h3 class="index_text">345</h3>
+                        <h3 class="index_text">350</h3>
                         <p class = "index_text">Cats Rescued!</p>
                     </div>
                     <div class="index_column" style="background-color: #42c692;">
-                        <h3 class="index_text">98%</h3>
-                        <p class = "index_text">Adoption Rate!</p>
+                        <h3 class="index_text">341</h3>
+                        <p class = "index_text">Cats Found Homes</p>
                     </div>
                     <div class="index_column" style="background-color: #37b885;">
                         <h3 class="index_text">100%</h3>

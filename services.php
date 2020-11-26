@@ -28,9 +28,11 @@
 
 <div id="index_callout_3" class="row container-fluid p-4 m-0">
     <div class="col-md-6 col-xl-4 container align-self-center text-center">
-        <h1>Help Us</h1>
+        <h1>How You Can Help</h1>
         <p>
-            Donation, Volunteer, Corporate, Individual etc
+            Adopting, adopt a companion and change lives. 
+            <p>Help us, your time and skills can make a difference, join our community!</p>
+            <p>Donation, funds will support our welfare services!</p>
         </p>
         <a href="#" class="btn btn-primary">Learn More</a>
     </div>
