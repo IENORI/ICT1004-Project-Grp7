@@ -4,9 +4,16 @@
 -
 -->
 <?php
-if (!isset($_SESSION['SessionId'])) {
-    $Fname = "";
-}
+    if (!isset($_SESSION['SessionId'])) {
+        $Fname = "";
+    }
+    
+    //if the logged on user is admin
+    if(isset($_SESSION['SessionId'])){
+        if($_SESSION['IsAdmin'] == 1){
+            $Admin = 1;
+        }
+    }
 ?>
 <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
@@ -27,6 +34,11 @@ if (!isset($_SESSION['SessionId'])) {
             <li class="nav-item">
                 <a class="nav-link" href="../aboutus.php">About Us</a>
             </li>
+            <?php 
+                if($IsAdmin){
+                    include "inc.navadmin.php";
+                }
+            ;?>
         </ul>
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
