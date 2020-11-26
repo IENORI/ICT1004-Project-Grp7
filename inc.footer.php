@@ -21,7 +21,7 @@ Footer common
 <!--    </div>-->
 
     <div class="container-fluid row justify-content-center text-center align-items-start text-md-left mt-5">
-            <div class="col-md-3 col-xl-2 mb-3">
+            <div class="col-md-4 col-xl-3 mb-3">
                 <h6 class="text-uppercase font-weight-bold">CAT SANCTUARY</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
@@ -29,14 +29,11 @@ Footer common
                 </p>
             </div>
 
-            <div class="col-md-3 col-xl-2 mb-3">
+            <div class="col-md-4 col-xl-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">Useful links</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
                     <a href="../aboutus.php">About Us</a>
-                </p>
-                <p>
-                    <a href="../services.php">Services</a>
                 </p>
                 <p>
                     <a href="../login.php">Your Account</a>
@@ -46,7 +43,7 @@ Footer common
                 </p>
             </div>
 
-            <div class="col-md-4 col-xl-2 mb-4 col-xl-3">
+            <div class="col-md-4 col-xl-3 mb-4">
                 <h6 class="text-uppercase font-weight-bold">Contact Us</h6>
                 <hr class="teal accent-3 mb-3 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <a href="http://maps.google.com/?q=Singapore Institute of Technology">
@@ -58,7 +55,7 @@ Footer common
                 <a href="mailto:CatSanctuary@sit.com">
                     <p>
                        <i class="fa fa-envelope mr-3" aria-hidden="true"></i>
-                       CatSanctuary@sit.com
+                       CatSanct@sit.com
                     </p>
                 </a>
                 <a href="tel:99887766">
@@ -75,7 +72,7 @@ Footer common
                 </a>
             </div>
 
-            <div class="col-md-3 col-xl-2 mb-3">
+            <div class="col-md-4 col-xl-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">Social Media</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <a href="https://www.facebook.com">
