@@ -3,10 +3,10 @@
  Nav common
 -
 -->
-<?php 
-    if(!isset($_SESSION['SessionId'])){
-        $Fname = "";
-    }
+<?php
+if (!isset($_SESSION['SessionId'])) {
+    $Fname = "";
+}
 ?>
 <nav class="navbar sticky-top navbar-expand-sm navbar-dark bg-primary">
     <a class="navbar-brand" href="/">
@@ -18,6 +18,9 @@
     </button>
     <div class="collapse navbar-collapse" id="navBarToggle">
         <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="../index.php">Home</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link" href="../adopt.php">Adopt</a>
             </li>
