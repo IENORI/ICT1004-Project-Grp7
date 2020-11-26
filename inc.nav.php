@@ -31,7 +31,7 @@ if (!isset($_SESSION['SessionId'])) {
         <ul class="navbar-nav ml-auto">
             <li class="nav-item">
                 <a class="nav-link" href="../login.php">
-                    <img style="margin-bottom: 1px;" id="nav-logo" src="../media/icon/face-white-48dp.svg" width="30" height="30" alt="Login Icon">
+                    <img style="margin-bottom: 1px;" id="nav-login-logo" src="../media/icon/face-white-48dp.svg" width="30" height="30" alt="Login Icon">
                     <?php echo $Fname; ?>
                 </a>
             </li>
