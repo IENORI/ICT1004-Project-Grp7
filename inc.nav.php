@@ -6,12 +6,13 @@
 <?php
     if (!isset($_SESSION['SessionId'])) {
         $Fname = "";
+        $IsAdmin = 0;
     }
     
     //if the logged on user is admin
     if(isset($_SESSION['SessionId'])){
         if($_SESSION['IsAdmin'] == 1){
-            $Admin = 1;
+            $IsAdmin = 1;
         }
     }
 ?>
