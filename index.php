@@ -22,7 +22,7 @@ include "inc.sessionauthless.php";
                 <div id="index_banner_image" class="row container-fluid p-0 m-0">
                     <div id="index_banner_text" class="justify-content-center align-self-center container-fluid">
                         <h3 class="text-white p-0">ADOPTIONS NOW OPEN BY APPOINTMENT</h3>
-                        <p class="text-white m-4">Adopt a cutie who will brighten your day!</p>
+                        <p class="text-white m-4">Adopt a cutie who will brighten your day! Give them a home today!</p>
                         <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                     </div>
                 </div>
