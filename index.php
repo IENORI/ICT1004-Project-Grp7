@@ -79,6 +79,8 @@ include "inc.sessionauthless.php";
                                     <h5 class="mb-0">Adopt</h5>
                                     <span class="small">We care for over 50 needy animals every month. 
                                         Adopt a companion and change lives!</span>
+                                    <br>
+                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-sm-6 mb-5">
@@ -87,6 +89,8 @@ include "inc.sessionauthless.php";
                                          alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
                                     <h5 class="mb-0">Help Us</h5>
                                     <span class="small">Your time and skills can definitely make a difference. Join our community!</span>
+                                    <br>
+                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-sm-6 mb-5">
@@ -96,6 +100,8 @@ include "inc.sessionauthless.php";
                                     <h5 class="mb-0">Donation</h5>
                                     <span class="small">Your funds will support our welfare services for these little
                                         furballs!</span>
+                                    <br>
+                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-sm-6 mb-5">
@@ -105,6 +111,8 @@ include "inc.sessionauthless.php";
                                     <h5 class="mb-0">24/7 Rescues</h5>
                                     <span class="small">Call our 24/7 hotline to save a wandering cat or kitten from 
                                         any more potential danger!</span>
+                                    <br>
+                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                                 </div>
                             </div>
                         </div>
