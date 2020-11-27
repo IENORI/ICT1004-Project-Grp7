@@ -57,28 +57,28 @@ include "inc.sessionauthless.php";
                     <div class="row text-center">
                         <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
-                          <div class="bg-white rounded shadow-sm py-5 px-4">
+                          <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
-                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
                             <h5 class="mb-0">Adopt</h5>
                             <span class="small">We care for over 50 needy animals every month. 
-                                Adopt a companion today and change lives.</span>
+                                Adopt a companion and change lives!</span>
                           </div>
                         </div>
                         <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
-                          <div class="bg-white rounded shadow-sm py-5 px-4">
+                          <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
-                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
                             <h5 class="mb-0">Help Us</h5>
                             <span class="small">Your time and skills can definitely make a difference. Join our community!</span>
                           </div>
                         </div>
                        <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
-                          <div class="bg-white rounded shadow-sm py-5 px-4">
+                          <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
-                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
                             <h5 class="mb-0">Donation</h5>
                             <span class="small">Your funds will support our welfare services for these little
                             furballs!</span>
@@ -86,9 +86,9 @@ include "inc.sessionauthless.php";
                         </div>
                        <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
-                          <div class="bg-white rounded shadow-sm py-5 px-4">
+                          <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
-                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
+                                   alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
                             <h5 class="mb-0">24/7 Rescues</h5>
                             <span class="small">Call our 24/7 hotline to save a wandering cat or kitten from 
                                 any more potential danger!</span>
