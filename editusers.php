@@ -17,8 +17,7 @@
         }
     }
     
-    $error_msg = "";
-    $userarr = Array(Array());
+    $userarr = Array();
     
     $config = parse_ini_file('process/db.ini');                 // FOR LOCAL DEV
 //      $config = parse_ini_file('/home/dev/db.ini');             // FOR SERVER DEPLOYED
@@ -27,7 +26,7 @@
     
     if ($conn -> connect_error) {
         // ERROR - Failed to connect to MySQL instance (Wrong ini location / MySQL down)
-        $error_msg = "!! Error creating DB connection >> ". $conn -> connect_error ." << !!";
+        echo "!! Error creating DB connection >> ". $conn -> connect_error ." << !!";
     }
     else{
         // SQL query to select all the users
@@ -37,13 +36,7 @@
         if($totalRows > 0){
             //data of each row in server
             while($row = $result -> fetch_assoc()){
-                $userarr[] = Array(
-                        'UserID' => $row['UID'],
-                        'UserFname' => $row['Fname'],
-                        'UserLname' => $row['Lname'],
-                        'UserEmail' => $row['Email'],
-                        'UserHpNumber' => $row['HPNum']
-                );
+                $userarr[] = $row;
             }
         }
         else{
@@ -53,11 +46,7 @@
     }
     $conn->close();
     
-    foreach ($userarr as $user){
-        foreach($user as $key => $value){
-            echo $key . " " . $value . "\n";
-        }
-    }
+    //print_r($userarr);
 ?>
 
 <html>
@@ -70,6 +59,7 @@
         <?php 
             include "inc.nav.php";
         ?>
+        <br>
         <div class="container">
             <table class="table table-hover">
                 <thead>
@@ -78,11 +68,13 @@
                         <th scope="col">First Name</th>
                         <th scope="col">Last Name</th>
                         <th scope="col">Email</th>
-                        <th scope="col">HP No.</th>
+                        <th scope="col">Handphone No.</th>
+                        <th scope="col">Admin</th>
+                        <th scope="col">Options</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <?php include "edituserstablerow.php"; ?>
+                    <?php include "edituserrows.php"; ?>
                 </tbody>
             </table>
         </div>
