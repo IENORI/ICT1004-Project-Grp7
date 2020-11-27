@@ -28,9 +28,10 @@ if (mysqli_connect_errno()) {
         <?php
         include "inc.head.php";
         ?>
+        <link rel="stylesheet" href="css/scroll_up.css">
     </head>
     <body>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         <?php
         include "inc.nav.php";
         ?>
@@ -298,5 +299,6 @@ if (mysqli_connect_errno()) {
         <?php
         include "inc.footer.php";
         ?>
+        <script src="js/scroll_up.js"></script>
     </body>
 </html>
