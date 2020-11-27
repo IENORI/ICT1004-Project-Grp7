@@ -1,0 +1,35 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Nov 2020, 5:22:48 pm
+    Author     : dann
+*/
+.scrollToTopBtn{
+    background-color: #20c997;
+    border:none;
+    border-radius: 50%;
+    color:white;
+    cursor:pointer;
+    font-size: 16px;
+    line-height: 48px;
+    width: 48px;
+    
+    postion:fixed;
+    bottom:30px;
+    right:30px;
+    z-index:100;
+    opacity:1;
+    transform: translateY(100px);
+}
+
+.scrollToTopBtn:hover{
+    background-color: #555;
+}
+
+.showBtn{
+    opactiy:1;
+    transfrom:translateY(0);
+}
