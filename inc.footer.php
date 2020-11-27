@@ -96,7 +96,6 @@ Footer common
                 </p>
             </a>
         </div>
-        <button onclick="scrollToTop()" class="scrollToTopBtn">Top</button>
     </div>
 
     <div class="container-fluid row footer-copyright text-center justify-content-center py-3 text-white bg-primary">
