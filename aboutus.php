@@ -17,8 +17,10 @@ include "inc.sessionauthless.php";
         <?php
         include "inc.head.php";
         ?>
+        <link rel="stylesheet" href="css/scroll_up.css">
     </head>
     <body>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         <div id="parent-wrapper" class="d-flex flex-column min-vh-100">
             <?php
             include "inc.nav.php";
@@ -124,6 +126,6 @@ include "inc.sessionauthless.php";
             include "inc.footer.php";
             ?>
         </div>
-
+        <script src="js/scroll_up.js"></script>
     </body>
 </html>
