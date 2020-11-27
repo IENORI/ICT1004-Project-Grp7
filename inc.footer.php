@@ -21,13 +21,13 @@ Footer common
 <!--    </div>-->
 
     <div class="container-fluid row justify-content-center text-center align-items-start text-md-left mt-5">
-            <div class="col-md-4 col-xl-3 mb-3">
+<!--            <div class="col-md-4 col-xl-3 mb-3">
                 <h6 class="text-uppercase font-weight-bold">CAT SANCTUARY</h6>
                 <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
                 <p>
                     Our mission is to prevent cruelty to promote kindness to animals.
                 </p>
-            </div>
+            </div>-->
 
             <div class="col-md-4 col-xl-2 mb-3">
                 <h6 class="text-uppercase font-weight-bold">Useful links</h6>
