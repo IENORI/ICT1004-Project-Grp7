@@ -55,7 +55,6 @@ include "inc.sessionauthless.php";
                     </div>
                   </div>
                     <div class="row text-center">
-                        <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
@@ -65,7 +64,6 @@ include "inc.sessionauthless.php";
                                 Adopt a companion and change lives!</span>
                           </div>
                         </div>
-                        <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
@@ -74,7 +72,6 @@ include "inc.sessionauthless.php";
                             <span class="small">Your time and skills can definitely make a difference. Join our community!</span>
                           </div>
                         </div>
-                       <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
@@ -84,7 +81,6 @@ include "inc.sessionauthless.php";
                             furballs!</span>
                           </div>
                         </div>
-                       <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                           <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                               <img src="media/icon/index_HTH_icon.png"
