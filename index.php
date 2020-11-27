@@ -12,7 +12,7 @@ include "inc.sessionauthless.php";
         <link rel="stylesheet" href="css/scroll_up.css">
     </head>
     <body>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         <div id="parent-wrapper" class="d-flex flex-column min-vh-100">
             <?php
             include "inc.nav.php";
