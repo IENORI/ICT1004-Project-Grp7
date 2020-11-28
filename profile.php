@@ -4,8 +4,6 @@ TOBEIMPLEMENTED:
     API:
         profile/<userid>
 
-TODO:
-    CHECK IF ADMIN GIVE MORE FUNCTIONS
 -->
 
 

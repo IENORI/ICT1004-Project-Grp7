@@ -4,6 +4,6 @@
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
     <a class="dropdown-item" href="#">Cat</a>
-    <a class="dropdown-item" href="#">Users</a>
+    <a class="dropdown-item" href="../editusers.php">Users</a>
   </div>
 </div>

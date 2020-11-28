@@ -1,0 +1,30 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 27 Nov 2020, 5:22:48 pm
+    Author     : dann
+*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  outline: none;
+  background-color: #20c997;
+  color: white;
+  cursor: pointer;
+  line-height:48px;
+  width:48px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
