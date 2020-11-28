@@ -11,17 +11,17 @@
     text-align: center;
 }
 
-.index_column{
-    float:left;
-    width:33.33%;
-    padding:10px;
-}
+/*.index_column{*/
+/*    float:left;*/
+/*    width:33.33%;*/
+/*    padding:10px;*/
+/*}*/
 
-.index_row:after{
-    content:"";
-    display:table;
-    clear:both;
-}
+/*.index_row:after{*/
+/*    content:"";*/
+/*    display:table;*/
+/*    clear:both;*/
+/*}*/
 
 .index_row{
     margin-left: 0px;

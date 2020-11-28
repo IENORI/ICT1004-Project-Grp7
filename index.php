@@ -29,28 +29,28 @@ include "inc.sessionauthless.php";
                     </div>
                 </div>
 
-                <div>
-                    <br>
+<!--                <div>-->
+<!--                    <br>-->
+<!--                </div>-->
+
+                <div class="container-fluid row index_row p-0">
+                    <div class="container-fluid col-md-4 index_column justify-content-center" style="background-color: #37b885;">
+                        <h3 class="index_text pt-2 m-0">350</h3>
+                        <p class = "index_text pb-2 m-0">Cats Rescued!</p>
+                    </div>
+                    <div class="container-fluid col-md-4 index_column" style="background-color: #42c692;">
+                        <h3 class="index_text pt-2 m-0">341</h3>
+                        <p class = "index_text pb-2 m-0">Cats Found Homes</p>
+                    </div>
+                    <div class="container-fluid col-md-4 index_column" style="background-color: #37b885;">
+                        <h3 class="index_text pt-2 m-0">100%</h3>
+                        <p class = "index_text pb-2 m-0">Happy Adopters!</p>
+                    </div>
                 </div>
 
-                <div class="index_row">
-                    <div class="index_column" style="background-color: #37b885;">
-                        <h3 class="index_text">350</h3>
-                        <p class = "index_text">Cats Rescued!</p>
-                    </div>
-                    <div class="index_column" style="background-color: #42c692;">
-                        <h3 class="index_text">341</h3>
-                        <p class = "index_text">Cats Found Homes</p>
-                    </div>
-                    <div class="index_column" style="background-color: #37b885;">
-                        <h3 class="index_text">100%</h3>
-                        <p class = "index_text">Happy Adopters!</p>
-                    </div>
-                </div>
-
-                <div>
-                    <br>
-                </div>
+<!--                <div>-->
+<!--                    <br>-->
+<!--                </div>-->
 
                 <div id="index_callout_1" class="row container-fluid p-4 m-0">
                     <div class="col-md-6 col-xl-4 container align-self-center text-center">
