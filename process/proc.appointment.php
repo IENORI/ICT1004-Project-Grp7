@@ -29,6 +29,7 @@ if(mysqli_connect_errno()){
     $result = mysqli_query($conn,$insertQuery);
     $result2 = mysqli_query($conn, $updateQuery);
     $result3 = mysqli_query($conn, $updateQuery2);
+
 ?>
 <html lang="en">
     <head>
