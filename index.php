@@ -25,7 +25,7 @@ include "inc.sessionauthless.php";
                     <div id="index_banner_text" class="justify-content-center align-self-center container-fluid">
                         <h3 class="text-white p-0">ADOPTIONS NOW OPEN BY APPOINTMENT</h3>
                         <p class="text-white m-4">Adopt a cutie who will brighten your day! Give them a home today!</p>
-                        <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
+                        <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
                     </div>
                 </div>
 
@@ -78,43 +78,43 @@ include "inc.sessionauthless.php";
                                 <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                                     <img src="media/icon/index_HTH_icon.png"
                                          alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
-                                    <h5 class="mb-0">Adopt</h5>
+                                    <h5 class="mb-0 pb-3">Adopt</h5>
                                     <span class="small">We care for over 50 needy animals every month. 
                                         Adopt a companion and change lives!</span>
                                     <br>
-                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
+                                    <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-sm-6 mb-5">
                                 <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                                     <img src="media/icon/index_HTH_icon.png"
                                          alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
-                                    <h5 class="mb-0">Help Us</h5>
+                                    <h5 class="mb-0 pb-3">Help Us</h5>
                                     <span class="small">Your time and skills can definitely make a difference. Join our community!</span>
                                     <br>
-                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
+                                    <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-sm-6 mb-5">
                                 <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                                     <img src="media/icon/index_HTH_icon.png"
                                          alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
-                                    <h5 class="mb-0">Donation</h5>
+                                    <h5 class="mb-0 pb-3">Donation</h5>
                                     <span class="small">Your funds will support our welfare services for these little
                                         furballs!</span>
                                     <br>
-                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
+                                    <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-sm-6 mb-5">
                                 <div class="bg-white rounded shadow-sm py-5 px-4 card border-primary mb-3">
                                     <img src="media/icon/index_HTH_icon.png"
                                          alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
-                                    <h5 class="mb-0">24/7 Rescues</h5>
+                                    <h5 class="mb-0 pb-3">24/7 Rescues</h5>
                                     <span class="small">Call our 24/7 hotline to save a wandering cat or kitten from 
                                         any more potential danger!</span>
                                     <br>
-                                    <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
+                                    <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
                                 </div>
                             </div>
                         </div>
