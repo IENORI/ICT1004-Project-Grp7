@@ -111,6 +111,7 @@
                 </div>
             </div>
             <br>
+            <br>
             <?php
                 include "inc.footer.php";
             ?>
