@@ -26,9 +26,10 @@ if(mysqli_connect_errno()){
         <?php
             include "inc.head.php";
         ?>
+        <link rel="stylesheet" href="css/scroll_up.css">
     </head>
     <body>
-
+        <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         <?php
             include "inc.nav.php";
         ?>
@@ -50,11 +51,11 @@ if(mysqli_connect_errno()){
             </nav>
         
         <br>
-        <h1 class="adoptCat">😸Cats for adoption😸</h1>
+        <h1 class="adoptCat">Adoption Gallery</h1>
         <hr>
-        <h6 class="appointmentCat">Hello there! We are so happy and delightful for you to find a friend for life! 
-            Adoption are carried out through appointments only. To start off, browse further on this page to choose 
-            your preferred adoption. Adoption are <b>ONLY LIMITED TO ONE PER APPOINTMENT!!!😻😻😻</b></h6>
+        <h6 class="appointmentCat">We are so excited for you to find a friend for life! Please read the information below for the adoption 
+        process!</h6>
+        <h6 class="appointmentCat">Can't find a suitable companion? Please revisit our site as we update frequently!<h6>
         </div>
         <br>
         
@@ -342,5 +343,6 @@ if(mysqli_connect_errno()){
         <?php
             include "inc.footer.php";
         ?>
+       <script src="js/scroll_up.js"></script>
     </body>
 </html>
