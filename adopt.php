@@ -41,8 +41,6 @@ if (mysqli_connect_errno()) {
         Page content
         -
         -->
-
-
         <br>
         <div class="container">
             <nav aria-label="breadcrumb">
