@@ -83,6 +83,13 @@ figure img{
   text-decoration: none;
   color: #555;
 }
+
+/*Admin Nav View*/
+.dropdown:hover>.dropdown-menu {
+    display: block;
+    margin-top: 0px;
+}
+
 .appointmentImage{
     border: 5px solid #008080;
     border-radius: 10px;
