@@ -58,9 +58,18 @@ if (mysqli_connect_errno()) {
             <h6 class="appointmentCat">Can't find a suitable companion? Please revisit our site as we update frequently!<h6>
                     </div>
         <div> 
-            <button class="collapsible">Open Collapsible</button>
+            <br>
+            <button class="collapsible bg-primary">Adoption Information</button>
             <div class="content">
-                <p>hello</p>
+                <br>
+                <h4>How to Adopt</h4>
+                <hr>
+                <h6>Step 1: Browse adoption gallery</h6>
+                <br>
+                <h6>Step 2: Click on "Make appointment"</h6>
+                <br>
+                <h6>Step 3: Show up for your appointment on time</h6>
+                <br>
             </div>
         </div>
                     <br>
