@@ -14,7 +14,7 @@ LOGIN SUCCESS FRAGMENT CONFIRMATION PAGE
           <h2>Welcome back, <?php echo $Fname ; ?></h2>
           <p class="lead">These pets are looking up at you, don't let them down.</p>
           <hr class="my-4">
-          <p>AdoptCat@SG have cared for over 200 needy animals every month. Adopt a companion and change lives. It's in your hands.</p>
+          <p>Cat Sanctuary SG have cared for over 200 needy animals. Adopt a companion and change lives. It's in your hands.</p>
           <p class="lead">
               <a class="btn btn-primary btn-lg" href="../index.php" role="button">Home</a>
               <a class="btn btn-primary btn-lg" href="../profile.php" role="button">Profile</a> 
