@@ -57,7 +57,7 @@ if (mysqli_connect_errno()) {
                 process!</h6>
             <h6 class="appointmentCat">Can't find a suitable companion? Please revisit our site as we update frequently!<h6>
                     </div>
-        <div> 
+        <div class="container"> 
             <br>
             <button class="collapsible bg-primary">Adoption Information</button>
             <div class="content">
