@@ -16,6 +16,8 @@ and open the template in the editor.
     text-align:left;
     outline: none;
     font-size: 20px;
+    border: 1px solid white;
+    
 }
 
 .btnactive, .collapsible:hover{
