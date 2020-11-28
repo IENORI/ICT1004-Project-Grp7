@@ -29,7 +29,7 @@
             $Edited_Fname = sanitize_input($_POST['Edited_Fname']);
         }
         else{
-            $error_msg .= "Last Name Required! <br>";
+            $error_msg .= "First Name Required! <br>";
             $success = false;
         }
         if(!empty(($_POST['Edited_Lname']))){
