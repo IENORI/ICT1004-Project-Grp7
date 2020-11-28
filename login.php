@@ -12,7 +12,7 @@
     session_start();
     //If session found
     if(isset($_SESSION['SessionId'])){
-        echo "SESSION EXIST";
+        //echo "SESSION EXIST";
         /*//used for debugging
             session_destroy();
             session_unset();
@@ -22,7 +22,7 @@
         include("profile.php");
     }
     else{
-        echo "SESSION NOT FOUND";
+        //echo "SESSION NOT FOUND";
         include("login_frag.php");
     }
 ?>
