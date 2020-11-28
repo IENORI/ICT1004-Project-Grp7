@@ -101,27 +101,30 @@ include "inc.sessionauthless.php";
             </div>
             <div class="container p-4">
                 <div class="row">
-                    <div class="col-6">
-                        <br>
-                        <img src="media/image/pexels-photo-38867_1.jpeg" alt="" width="500" height="410">
+                    <div class="col-xl-6 col-md-6 col-sm-12 justify-content-center align-self-center">
+                        <img class="img-fluid" src="media/image/pexels-photo-38867_1.jpeg" alt="" width="500" height="410">
                     </div>
-                    <div class="col-6">
+                    <div class="col-xl-6 col-md-6 col-sm-12">
                         <br>
-                        <h2 style="text-align: left" class="pr-2"> Cat Sanctuary </h2>
-                        <p> The Cat Sanctuary is a non-governmental, registered animal welfare charity with IPC status.
-                            We rely on donations from supporters and community help from volunteers to continue our 
-                            important role as cat protectors! </p>
-                        <p> Over 50 cats roaming the streets without a home are rescued by us monthly. We provide shelter, food
-                            , medical needs and love to all these cats!</p>
-                        <h4>Mission</h4>
-                        <p><b>Our Mission</b> is to promote kindness and love to all cats.</p>
-                        <h4>Vision</h4>
-                        <p><b>Our Vision</b> is a compassionate Singapore where all cats are safe and treated with love.</p>
+                        <div class="container pb-4">
+                            <h2 style="text-align: left" class=""> Cat Sanctuary </h2>
+                            <p> The Cat Sanctuary is a non-governmental, registered animal welfare charity with IPC status.
+                                We rely on donations from supporters and community help from volunteers to continue our
+                                important role as cat protectors! </p>
+                            <p> Over 50 cats roaming the streets without a home are rescued by us monthly. We provide shelter, food
+                                , medical needs and love to all these cats!</p>
+                        </div>
+                        <div class="container pb-4">
+                            <h4>Mission</h4>
+                            <p><b>Our Mission</b> is to promote kindness and love to all cats.</p>
+                        </div>
+                        <div class="container">
+                            <h4>Vision</h4>
+                            <p><b>Our Vision</b> is a compassionate Singapore where all cats are safe and treated with love.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <br>
-            <br>
             <?php
             include "inc.footer.php";
             ?>
