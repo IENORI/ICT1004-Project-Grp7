@@ -18,12 +18,17 @@ if(mysqli_connect_errno()){
     $id = $_GET['id'];
     $date = date('Y-m-d H:i:s');
     $apptDate = date("c", strtotime($_POST['selecttime']));
-    
+    $user = $_SESSION['UID'];
+
   
     
     
-    $insertQuery = "INSERT INTO `appointment` (currentDate, apptDate, status, CCID) VALUES('$date', '$apptDate', 'booked', '$id')";
+    $insertQuery = "INSERT INTO `appointment` (currentDate, apptDate, status, CCID, UUID) VALUES('$date', '$apptDate', 'booked', '$id', '$user')";
+    $updateQuery = "UPDATE `user` SET haveAppt='Yes' WHERE UID=$user";
+    $updateQuery2 = "UPDATE `cat`, `appointment` SET cat.AdoptedBy=$user WHERE cat.CID=appointment.CCID";
     $result = mysqli_query($conn,$insertQuery);
+    $result2 = mysqli_query($conn, $updateQuery);
+    $result3 = mysqli_query($conn, $updateQuery2);
 ?>
 <html lang="en">
     <head>
@@ -35,11 +40,16 @@ if(mysqli_connect_errno()){
 
         <?php
             include "../inc.nav.php";
-            if ($result) {
+            if ($result & $result2 & $result3){
                 echo "New record created successfully";
-            } else {
-                echo "Error: " . $result . "<br>" . mysqli_error($conn);
+            } else if (!$result){
+                echo "Error: " . $result. "<br>" . mysqli_error($conn);
+            } else if (!$result2){
+                echo "Error: " . $result2 . "<br>" . mysqli_error($conn);
+            } else{
+                echo "Error: " . $result3 . "<br>" . mysqli_error($conn);
             }
+            
             mysqli_close($conn);
             }
         ?>

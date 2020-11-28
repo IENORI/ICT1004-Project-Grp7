@@ -1,4 +1,7 @@
 <?php
+
+include "inc.sessionauthless.php";
+
 $config = parse_ini_file('process/db.ini');  
 
 $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
