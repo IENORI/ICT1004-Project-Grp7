@@ -28,18 +28,18 @@
         if(!empty($_POST['Edited_Fname'])){
             $Edited_Fname = sanitize_input($_POST['Edited_Fname']);
         }
+        else{
+            $error_msg .= "First Name Required! <br>";
+            $success = false;
+        }
         if(!empty(($_POST['Edited_Lname']))){
             $Edited_Lname = sanitize_input($_POST['Edited_Lname']);
-        }
-        else{
-            $error_msg .= "Last Name Required! <br>";
-            $success = false;
         }
         if(!empty(($_POST['Edited_HPNum']))){
             $Edited_HPNum = sanitize_input($_POST['Edited_HPNum']);
             
             //Additional check for phone number
-            if($_POST['Edited_HPNum'] < 60000000 || $_POST['Edited_HPNum'] < 99999999){
+            if($_POST['Edited_HPNum'] < 60000000 || $_POST['Edited_HPNum'] > 99999999){
                 $error_msg .= "Invalid Phone Number <br>";
                 $success = false;
             }
