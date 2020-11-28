@@ -28,12 +28,12 @@
         if(!empty($_POST['Edited_Fname'])){
             $Edited_Fname = sanitize_input($_POST['Edited_Fname']);
         }
-        if(!empty(($_POST['Edited_Lname']))){
-            $Edited_Lname = sanitize_input($_POST['Edited_Lname']);
-        }
         else{
             $error_msg .= "Last Name Required! <br>";
             $success = false;
+        }
+        if(!empty(($_POST['Edited_Lname']))){
+            $Edited_Lname = sanitize_input($_POST['Edited_Lname']);
         }
         if(!empty(($_POST['Edited_HPNum']))){
             $Edited_HPNum = sanitize_input($_POST['Edited_HPNum']);
