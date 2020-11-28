@@ -116,7 +116,7 @@ include "inc.sessionauthless.php";
                         <h4>Mission</h4>
                         <p><b>Our Mission</b> is to promote kindness and love to all cats.</p>
                         <h4>Vision</h4>
-                        <p><b>Our Vission</b> is a compassionate Singapore where all cats are safe and treated with love.</p>
+                        <p><b>Our Vision</b> is a compassionate Singapore where all cats are safe and treated with love.</p>
                     </div>
                 </div>
             </div>
