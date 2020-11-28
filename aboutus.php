@@ -103,11 +103,11 @@ include "inc.sessionauthless.php";
                 <div class="row">
                     <div class="col-6">
                         <br>
-                        <img src="media/image/pexels-photo-38867_1.jpeg" alt="" width="500" height="387">
+                        <img src="media/image/pexels-photo-38867_1.jpeg" alt="" width="500" height="410">
                     </div>
                     <div class="col-6">
                         <br>
-                        <h2 style="text-align: left" class="pr-2"> Who Are We </h2>
+                        <h2 style="text-align: left" class="pr-2"> Cat Sanctuary </h2>
                         <p> The Cat Sanctuary is a non-governmental, registered animal welfare charity with IPC status.
                             We rely on donations from supporters and community help from volunteers to continue our 
                             important role as cat protectors! </p>
