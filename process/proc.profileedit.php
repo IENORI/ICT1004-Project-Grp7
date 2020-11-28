@@ -39,7 +39,7 @@
             $Edited_HPNum = sanitize_input($_POST['Edited_HPNum']);
             
             //Additional check for phone number
-            if($_POST['Edited_HPNum'] < 60000000 || $_POST['Edited_HPNum'] < 99999999){
+            if($_POST['Edited_HPNum'] < 60000000 || $_POST['Edited_HPNum'] > 99999999){
                 $error_msg .= "Invalid Phone Number <br>";
                 $success = false;
             }
