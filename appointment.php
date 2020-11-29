@@ -20,12 +20,12 @@ else {
     $result = mysqli_query($conn,$selectQuery);
 
     $row = mysqli_fetch_assoc($result);
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
 
-=======
+//=======
     
     
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
     if(mysqli_num_rows($result) > 0){
     }
     else{
@@ -59,7 +59,7 @@ else {
             <br>
             <main id="content-wrapper" class="container-fluid p-0 m-0">
                 <?php
-<<<<<<< Updated upstream
+//<<<<<<< Updated upstream
                     if(!isset($_SESSION['UID'])) {
                         echo "<div class='container'>";
                         echo "<div class='jumbotron'>";
@@ -70,7 +70,7 @@ else {
                         echo "</div>";
                         echo "</div>";
                     } else {
-=======
+//=======
              if($user) {
                 echo "<br><br><h3 class='selected'>Please login before booking an appointment.</h4><br>";
                 echo "<a href='login.php' class= 'btn btn-danger'>Login</a><br><br>";
@@ -78,8 +78,9 @@ else {
             }
               
             else{
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
                 ?>
+                <div class="container">
                 <h3 class="selected">Cat selection:</h3>
                 <table>
                     <tbody>
@@ -98,7 +99,8 @@ else {
                         </form>
                     </tbody>
                 </table>
-<<<<<<< Updated upstream
+                </div>
+<!--<<<<<<< Updated upstream-->
                 <?php
                     }
                 ?>
@@ -107,7 +109,7 @@ else {
                 include "inc.footer.php";
             ?>
         </div>
-=======
+<!--=======-->
         <br>
                 
         </main>
@@ -118,6 +120,6 @@ else {
                   
                
         ?>
->>>>>>> Stashed changes
+<!-->>>>>>> Stashed changes-->
     </body>
 </html>
