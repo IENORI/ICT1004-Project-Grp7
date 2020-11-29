@@ -25,7 +25,7 @@ include "inc.sessionauthless.php";
                     <div id="index_banner_text" class="justify-content-center align-self-center container-fluid">
                         <h3 class="text-white p-0">ADOPTIONS NOW OPEN BY APPOINTMENT</h3>
                         <p class="text-white m-4">Adopt a cutie who will brighten your day! Give them a home today!</p>
-                        <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
+                        <a href="adopt.php" class="btn btn-primary px-4">Find out more!</a>
                     </div>
                 </div>
 
@@ -34,17 +34,17 @@ include "inc.sessionauthless.php";
 <!--                </div>-->
 
                 <div class="container-fluid row index_row p-0">
-                    <div class="container-fluid col-md-4 index_column justify-content-center" style="background-color: #37b885;">
+                    <div class="container-fluid col-md-4 index_column justify-content-center bg-primary">
                         <h3 class="index_text pt-2 m-0">350</h3>
                         <p class = "index_text pb-2 m-0">Cats Rescued!</p>
                     </div>
-                    <div class="container-fluid col-md-4 index_column" style="background-color: #42c692;">
-                        <h3 class="index_text pt-2 m-0">341</h3>
-                        <p class = "index_text pb-2 m-0">Cats Found Homes</p>
-                    </div>
-                    <div class="container-fluid col-md-4 index_column" style="background-color: #37b885;">
+                    <div class="container-fluid col-md-4 index_column bg-warning">
                         <h3 class="index_text pt-2 m-0">100%</h3>
                         <p class = "index_text pb-2 m-0">Happy Adopters!</p>
+                    </div>
+                    <div class="container-fluid col-md-4 index_column bg-primary">
+                        <h3 class="index_text pt-2 m-0">341</h3>
+                        <p class = "index_text pb-2 m-0">Cats Found Homes</p>
                     </div>
                 </div>
 
