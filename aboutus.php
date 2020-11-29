@@ -28,11 +28,13 @@ include "inc.sessionauthless.php";
 
             <!--Our Team-->
             <div class="bg-light py-5">
-                <div class="container py-5">
+                <div class="container">
                     <div class="row mb-4">
-                        <div class="col-lg-5">
+                        <div>
                             <h2 class="display-4 font-weight-light">Our team</h2>
-                            <p class="font-italic">2020 ICT 1004 GROUP 7</p>
+                            <p>We are a team of cat loving people that aims to provide a safe and the best for cats that are 
+                                under our care and also aim to reduce the number of cats that are still roaming and exposed to 
+                                potential danger down to 0!</p>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -121,6 +123,23 @@ include "inc.sessionauthless.php";
                         <div class="container">
                             <h4>Vision</h4>
                             <p><b>Our Vision</b> is a compassionate Singapore where all cats are safe and treated with love.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-xl-6 col-md-6 col-sm-12 justify-content-center align-self-center">
+                        <h2 style="text-align: left" class=""> Get To Us </h2>
+                        <p> Nearest MRT: Yio Chu Kang </p>
+                        <p> Bus to here from Yio Chu Kang MRT: 72 </p>
+                    </div>
+                    <div class="col-xl-6 col-md-6 col-sm-12">
+                        <br>
+                        <div class="container pb-4">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9393497672886!2d103.78067088665092!3d1.3012013265138087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a0ba4217fb%3A0x5213c91433e6d4e9!2sSingapore%20Institute%20of%20Technology!5e0!3m2!1sen!2ssg!4v1606630937658!5m2!1sen!2ssg" 
+                                    width="500" height="410" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
