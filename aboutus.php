@@ -29,12 +29,14 @@ include "inc.sessionauthless.php";
             <!--Our Team-->
             <div class="bg-light py-5">
                 <div class="container">
-                    <div class="row mb-4">
+                    <div class="row p-4">
                         <div>
                             <h2 class="display-4 font-weight-light">Our team</h2>
-                            <p>We are a team of cat loving people that aims to provide a safe and the best for cats that are 
+                            <p>
+                                We are a team of cat loving people that aims to provide the best for cats that are
                                 under our care and also aim to reduce the number of cats that are still roaming and exposed to 
-                                potential danger down to 0!</p>
+                                potential danger down to 0!
+                            </p>
                         </div>
                     </div>
                     <div class="row text-center">
@@ -141,13 +143,14 @@ include "inc.sessionauthless.php";
                         <h4> By Bus </h4>
                         <p><b>Service 72</b></p>
                         <p> The service is provided between Yio Chu Kang interchange (next to Yio Chu Kang MRT Station) and our area! </p>
+                        <hr>
                         <h4> By Train </h4>
                         <p><b>Yio Chu Kang (NS15)</b></p>
                         <p> The nearest train station to NTU are Yio Chu Kang on the red line.
                     </div>
                     <div class="col-xl-6 col-md-6 col-sm-12">
                         <br>
-                        <div class="container pb-4">
+                        <div class="container p-4">
                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.665252371279!2d103.84664861589684!3d1.377523398995323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1606633072921!5m2!1sen!2ssg" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
