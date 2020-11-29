@@ -110,6 +110,7 @@ include "inc.sessionauthless.php";
                         <br>
                         <div class="container pb-4">
                             <h2 style="text-align: left" class=""> Cat Sanctuary </h2>
+                            <hr>
                             <p> The Cat Sanctuary is a non-governmental, registered animal welfare charity with IPC status.
                                 We rely on donations from supporters and community help from volunteers to continue our
                                 important role as cat protectors! </p>
@@ -127,13 +128,22 @@ include "inc.sessionauthless.php";
                     </div>
                 </div>
             </div>
+            
+            <div>
+                <hr>
+            </div>
 
             <div class="container p-4">
                 <div class="row">
                     <div class="col-xl-6 col-md-6 col-sm-12 justify-content-center align-self-center">
-                        <h2 style="text-align: left" class=""> Get To Us </h2>
-                        <p> Nearest MRT: Yio Chu Kang </p>
-                        <p> Bus to here from Yio Chu Kang MRT: 72 </p>
+                        <h2 style="text-align: left" class=""> Getting To Us </h2>
+                        <hr>
+                        <h4> By Bus </h4>
+                        <p><b>Service 72</b></p>
+                        <p> The service is provided between Yio Chu Kang interchange (next to Yio Chu Kang MRT Station) and our area! </p>
+                        <h4> By Train </h4>
+                        <p><b>Yio Chu Kang (NS15)</b></p>
+                        <p> The nearest train station to NTU are Yio Chu Kang on the red line.
                     </div>
                     <div class="col-xl-6 col-md-6 col-sm-12">
                         <br>
