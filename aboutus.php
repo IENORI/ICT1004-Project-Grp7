@@ -138,8 +138,7 @@ include "inc.sessionauthless.php";
                     <div class="col-xl-6 col-md-6 col-sm-12">
                         <br>
                         <div class="container pb-4">
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.9393497672886!2d103.78067088665092!3d1.3012013265138087!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19a0ba4217fb%3A0x5213c91433e6d4e9!2sSingapore%20Institute%20of%20Technology!5e0!3m2!1sen!2ssg!4v1606630937658!5m2!1sen!2ssg" 
-                                    width="500" height="410" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.665252371279!2d103.84664861589684!3d1.377523398995323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1606633072921!5m2!1sen!2ssg" width="500" height="400" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
