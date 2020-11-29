@@ -63,9 +63,9 @@
 
         // Closing
         if ($status) {
-            header("Location: ../login.php");
+            header("Location: ../login.php?err=0");
         } else {
-            echo $msg_error;
+            header("Location: ../signup.php?err=1");
         }
     }
 

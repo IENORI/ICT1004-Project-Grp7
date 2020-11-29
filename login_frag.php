@@ -28,6 +28,13 @@
             <main id="content-wrapper" class="container mb-3">
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-xl-6">
+                        <?php
+                        if (isset($_GET["err"])) {
+                            if ($_GET["err"] == 0) {
+                                include "inc.signup_succ.php";
+                            }
+                        }
+                        ?>
                         <div class="card">
                             <h4 class="card-header bg-success text-white">Login</h4>
                             <div class="card-body" style="padding-bottom: 0">
