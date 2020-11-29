@@ -1,12 +1,15 @@
 <?php
 
+
 include "inc.sessionauthless.php";
+?>
+<?php
 
 $config = parse_ini_file('process/db.ini');
 
 $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
 
-
+$user = (!isset($_SESSION['UID']));
 
 if(mysqli_connect_errno()){
     echo mysqli_connect_error();
@@ -15,14 +18,20 @@ if(mysqli_connect_errno()){
 else {
     $selectQuery = "SELECT * FROM `cat` WHERE `CID` =".$_GET['id'];
     $result = mysqli_query($conn,$selectQuery);
-    $row = mysqli_fetch_assoc($result);
 
+    $row = mysqli_fetch_assoc($result);
+<<<<<<< Updated upstream
+
+=======
+    
+    
+>>>>>>> Stashed changes
     if(mysqli_num_rows($result) > 0){
     }
     else{
         $msg = "No Record found";
     }
-}
+
 
 
 ?>
@@ -50,6 +59,7 @@ else {
             <br>
             <main id="content-wrapper" class="container-fluid p-0 m-0">
                 <?php
+<<<<<<< Updated upstream
                     if(!isset($_SESSION['UID'])) {
                         echo "<div class='container'>";
                         echo "<div class='jumbotron'>";
@@ -60,6 +70,15 @@ else {
                         echo "</div>";
                         echo "</div>";
                     } else {
+=======
+             if($user) {
+                echo "<br><br><h3 class='selected'>Please login before booking an appointment.</h4><br>";
+                echo "<a href='login.php' class= 'btn btn-danger'>Login</a><br><br>";
+                
+            }
+              
+            else{
+>>>>>>> Stashed changes
                 ?>
                 <h3 class="selected">Cat selection:</h3>
                 <table>
@@ -79,6 +98,7 @@ else {
                         </form>
                     </tbody>
                 </table>
+<<<<<<< Updated upstream
                 <?php
                     }
                 ?>
@@ -87,5 +107,17 @@ else {
                 include "inc.footer.php";
             ?>
         </div>
+=======
+        <br>
+                
+        </main>
+        <?php
+}}
+        include "inc.footer.php";
+                     
+                  
+               
+        ?>
+>>>>>>> Stashed changes
     </body>
 </html>
