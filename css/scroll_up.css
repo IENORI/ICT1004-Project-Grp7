@@ -31,3 +31,13 @@ and open the template in the editor.
 #myBtn:hover {
   background-color: #555;
 }
+
+.responsive-iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
