@@ -15,7 +15,7 @@ LOGIN FAILURE FRAGMENT CONFIRMATION PAGE
           <hr class="my-4">
           <p> <?php echo $msg_error; ?></p>
           <p class="lead">
-              <a class="btn btn-primary btn-lg" href="../login.php" role="button">Back to Login</a>
+              <a class="btn btn-danger btn-lg" href="../login.php" role="button">Back to Login</a>
           </p>
         </div>
     </div>
