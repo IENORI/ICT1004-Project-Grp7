@@ -18,6 +18,7 @@ LOGIN SUCCESS FRAGMENT CONFIRMATION PAGE
           <p class="lead">
               <a class="btn btn-primary btn-lg" href="../index.php" role="button">Home</a>
               <a class="btn btn-primary btn-lg" href="../profile.php" role="button">Profile</a> 
+              <a class="btn btn-primary btn-lg" href="../editAppointment.php" role="button">Edit appointment</a>
           </p>
         </div>
     </div>

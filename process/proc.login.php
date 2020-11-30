@@ -116,7 +116,9 @@ include "../inc.nav.php";
 
             // SQL Prepared statement
             $stmt = $conn -> prepare("SELECT * FROM user WHERE Email = ?");
+           
             $res = $stmt -> bind_param('s', $Email);
+       
 
             //Execute SQL
             if (!$res = $stmt -> execute()) {
@@ -129,6 +131,7 @@ include "../inc.nav.php";
                 // Fetch row regardless if empty
                 $res = $stmt -> get_result();
                 $row = $res->fetch_assoc();
+             
                 if (empty($row)) {
                     // ERROR - Checks if row is "empty" and throws error (Email not found)
                     $msg_error = "Email not found or password does not match.";

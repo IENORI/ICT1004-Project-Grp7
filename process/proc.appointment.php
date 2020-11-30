@@ -45,11 +45,11 @@ if(mysqli_connect_errno()){
             if ($result & $result2){
                 echo "New record created successfully";
             } else if (!$result){
-                echo "You have a previous booking." .  "<br>" . mysqli_error($conn);
+                echo "There is a previous booking for this cat." .  "<br>" . mysqli_error($conn);
             } else if (!$result2){
-                echo "You have a previous booking." . "<br>" . mysqli_error($conn);
+                echo "There is a previous booking for this cat." . "<br>" . mysqli_error($conn);
             } else{
-                echo "You have a previous booking."  . "<br>" . mysqli_error($conn);
+                echo "There is a previous booking for this cat."  . "<br>" . mysqli_error($conn);
             }
             
             mysqli_close($conn);
