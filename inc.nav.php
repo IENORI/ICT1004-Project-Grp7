@@ -38,7 +38,7 @@
             <?php 
             if (isset($_SESSION['SessionId'])){
                 echo "<li class='nav-item'>
-                <a class='nav-link' href='../editAppointment.php'>Edit Appointment</a>
+                <a class='nav-link' href='../editAppointment.php'>Appointment</a>
             </li>";
             }
                 if($IsAdmin){

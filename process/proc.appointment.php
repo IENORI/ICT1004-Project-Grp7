@@ -26,10 +26,8 @@ if(mysqli_connect_errno()){
     
     $insertQuery = "INSERT INTO `appointment` (currentDate, apptDate, status, CCID, UUID) VALUES('$date', '$apptDate', 'booked', '$id', '$user')";
     $updateQuery = "UPDATE `user` SET haveAppt='Yes' WHERE UID=$user";
-    $updateQuery2 = "UPDATE `cat`, `appointment` SET cat.Adopted=$user WHERE cat.CID=appointment.CCID";
     $result = mysqli_query($conn,$insertQuery);
     $result2 = mysqli_query($conn, $updateQuery);
-    $result3 = mysqli_query($conn, $updateQuery2);
 
 ?>
 <html lang="en">
@@ -43,13 +41,28 @@ if(mysqli_connect_errno()){
         <?php
             include "../inc.nav.php";
             if ($result & $result2){
-                echo "New record created successfully";
+                echo "<div class='container'>";
+                echo "<div class='jumbotron'>";
+                echo "<h2>Successful booking!</h2><br>";
+                echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
+                echo "</div>";
+                        echo "</div>";
             } else if (!$result){
-                echo "There is a previous booking for this cat." .  "<br>" . mysqli_error($conn);
-            } else if (!$result2){
-                echo "There is a previous booking for this cat." . "<br>" . mysqli_error($conn);
+                echo "<div class='container'>";
+                echo "<div class='jumbotron'>";
+                echo "<h2>You are not allowed to book this cat!</h2>"
+                 .  "<br>" . mysqli_error($conn);
+                echo "<a href='../adopt.php' class= 'btn btn-lg btn-danger'>Back</a>";
+                echo "</div>";
+                        echo "</div>";
             } else{
-                echo "There is a previous booking for this cat."  . "<br>" . mysqli_error($conn);
+                echo "<div class='container'>";
+                echo "<div class='jumbotron'>";
+                echo "<h2>There is a previous booking for this cat!</h2>"
+                 .  "<br>" . mysqli_error($conn);
+                echo "<a href='../adopt.php' class= 'btn btn-lg btn-danger'>Back</a>";
+                echo "</div>";
+                        echo "</div>";
             }
             
             mysqli_close($conn);
