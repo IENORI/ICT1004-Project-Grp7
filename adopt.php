@@ -9,7 +9,7 @@ $conn = new mysqli($config['servername'], $config['username'], $config['password
 
 
 if (mysqli_connect_errno()) {
-    echo mysqli_connect_error();
+    echo "<br><h4>You are not connected to the server</br></h4>";
     exit();
 } else {
     $selectQuery = "SELECT * FROM `cat` ORDER BY `CID` ASC";
