@@ -1,77 +1,85 @@
-<!--
-TOBEIMPLEMENTED:
-    ALLOW USER TO ACCESS DIFFERENT PROFILES WITH 
-    API:
-        profile/<userid>
-
--->
-
-
 <?php
     include "inc.sessionauth.php";
 ?>
-
-<html>
-    <header>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
         <?php
-            include "inc.head.php";
+        include "inc.head.php";
         ?>
-    </header>
-    <div class="body">
-        <?php 
+    </head>
+    <body>
+        <div id="parent-wrapper" class="d-flex flex-column min-vh-100">
+            <?php
             include "inc.nav.php";
-        ?>
-        <br>
-        <div class="container">
-            my account information:
-            <br><br>
-            <div class="row">
-                <div class="col-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">User ID</h5>
-                            <p class="card-text"> <?php echo $UID ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Email</h5>
-                            <p class="card-text"> <?php echo $Email ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">First name</h5>
-                            <p class="card-text"><?php echo $Fname ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Last Name</h5>
-                            <p class="card-text"> <?php echo $Lname ?></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">Phone Number</h5>
-                            <p class="card-text"> <?php echo $HPNum; ?></p>
-                        </div>
-                    </div>
-                </div>
+            ?>
+
+            <div id="breadcrumb-wrapper" class="container mt-3">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Profile</li>
+                    </ol>
+                </nav>
             </div>
-            <br>
-            <a href="profileedit.php" class="btn btn-primary">Edit Account information</a>
-            <br>
-            <br>
-            <a href="logout.php" class="btn btn-danger">Log out</a>
+
+            <main id="content-wrapper" class="container mb-3">
+                <div class="row justify-content-center">
+                    <div class="col-md-8 col-xl-6">
+                        <div class="card">
+                            <h4 class="card-header bg-secondary text-white">My Profile</h4>
+                            <div class="card-body pb-0">
+                                <div class="form-group">
+                                    <fieldset disabled="">
+                                        <label class="control-label" for="userUID">User ID:</label>
+                                        <input class="form-control" id="userUID" type="text" placeholder="<?php echo $UID; ?>" disabled="">
+                                    </fieldset>
+                                </div>
+                                <div class="form-group">
+                                    <fieldset disabled="">
+                                        <label class="control-label" for="userEmail">Email:</label>
+                                        <input class="form-control" id="userEmail" type="text" placeholder="<?php echo $Email; ?>" disabled="">
+                                    </fieldset>
+                                </div>
+                                <div class="form-group">
+                                    <fieldset disabled="">
+                                        <label class="control-label" for="userFname">First Name:</label>
+                                        <input class="form-control" id="userFname" type="text" placeholder="<?php echo $Fname; ?>" disabled="">
+                                    </fieldset>
+                                </div>
+                                <div class="form-group">
+                                    <fieldset disabled="">
+                                        <label class="control-label" for="userLname">Last Name:</label>
+                                        <input class="form-control" id="userLname" type="text" placeholder="<?php echo $Lname; ?>" disabled="">
+                                    </fieldset>
+                                </div>
+                                <div class="form-group">
+                                    <fieldset disabled="">
+                                        <label class="control-label" for="userHP">Phone Number:</label>
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <span class="input-group-text">🇸🇬 +65</span>
+                                            </div>
+                                            <input class="form-control" id="userHP" type="text" placeholder="<?php echo $HPNum; ?>" disabled="">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <div class="card-footer container-fluid">
+                                <div class="container-fluid">
+                                    <a href="profileedit.php" class="btn btn-block btn-primary">Edit Account information</a>
+                                </div>
+                                <div class="container-fluid pt-2 text-center">
+                                    <a href="logout.php" class="btn btn-danger">Log out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <?php
+                include "inc.footer.php";
+            ?>
         </div>
-    </div>
+    </body>
 </html>
