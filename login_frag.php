@@ -39,7 +39,7 @@
                         ?>
                         <div class="card">
                             <h4 class="card-header bg-success text-white">Login</h4>
-                            <div class="card-body" style="padding-bottom: 0">
+                            <div class="card-body pb-0">
                                 <form action="process/proc.login.php" method="post">
                                     <div class="form-group">
                                         <label for="login_Email">Email address :</label>

@@ -37,7 +37,7 @@
                         ?>
                         <div class="card">
                             <h4 class="card-header bg-secondary text-white">Create your account today!</h4>
-                            <div class="card-body" style="padding-bottom: 0">
+                            <div class="card-body pb-0">
                                 <p class="card-text">Kindly provide the following information to create an account with us.</p>
                                 <form action="process/proc.signup.php" method="post">
                                     <div class="form-group">
