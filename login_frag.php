@@ -32,6 +32,8 @@
                         if (isset($_GET["err"])) {
                             if ($_GET["err"] == 0) {
                                 include "inc.signup_succ.php";
+                            } else if ($_GET["err"] == 2) {
+                                include "inc.no_access.php";
                             }
                         }
                         ?>

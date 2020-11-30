@@ -35,8 +35,9 @@
         $IsAdmin = $_SESSION['IsAdmin'];
     }
     else{
-        echo "UNAUTHORIZED ACCESS / PAGE NOT FOUND";
-        echo "Go back home page";
-        exit();
+//        echo "UNAUTHORIZED ACCESS / PAGE NOT FOUND";
+//        echo "Go back home page";
+//        exit();
+        header("Location: ../login.php?err=2");
     }
 ?>
