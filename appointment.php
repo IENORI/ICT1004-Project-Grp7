@@ -102,24 +102,20 @@ else {
                 </div>
 <!--<<<<<<< Updated upstream-->
                 <?php
-                    }
+                }   
                 ?>
             </main>
+            <br>
             <?php
+            }}  
                 include "inc.footer.php";
             ?>
         </div>
 <!--=======-->
         <br>
                 
-        </main>
-        <?php
-}}
-        include "inc.footer.php";
-                     
-                  
-               
-        ?>
+      
+        
 <!-->>>>>>> Stashed changes-->
     </body>
 </html>

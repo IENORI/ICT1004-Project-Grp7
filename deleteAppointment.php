@@ -1,4 +1,5 @@
 <?php
+
 include "inc.sessionauth.php";
 ?>
 <?php
@@ -47,8 +48,9 @@ else {
             <?php
                 include "inc.nav.php";
             ?>
+           
             <br>
-            <?php
+             <?php
             ?>
             <div class="container">
                 <h3 class="selected">Cat selection:</h3>
@@ -61,36 +63,20 @@ else {
                             ?>
                             <table>
                             <tbody> 
-                                <form action="process/proc.editAppointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                <form action="process/proc.deleteAppointment.php?id=<?php echo $row['CID']; ?>" method="post">
                                 <tr><img src="<?php echo $row['Images']?>" class="appointmentImage"></tr><br><br>
                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                 <tr><b>Description: </b> <?php echo $row['Description']; ?></tr><br>
                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
                             <tr><b>Age: </b><?php echo $row['Age']; ?></tr><br>
                             <tr><b>Date: </b><?php echo $row['apptDate']; ?></tr><br>
-
-                                <tr><label for="selecttime"><b>Select new Date and Time of appointment:</b></label><br>
-                                <input type="datetime-local"  id="selecttime" name="selecttime" REQUIRED></tr>
                                 <br>
-                                <br>
-                                <td><button type="submit" class="btn btn-primary" name="appointmentnext" value="appointmentnext">Confirm edit appointment</button></td>
+                                <td><button type="submit" class="btn btn-primary" name="appointmentnext" value="appointmentnext">Confirm delete appointment</button></td>
                            </tbody>
                         </table>
                         <?php echo"</form><br>";}?>
-                        <a href="deleteAppointment.php" button="submit" class="btn btn-primary" name="appointmentnext" value="appointmentnext">Delete appointment</a>
-                        
-                    
-                    <br>
-                    <br>
-
             </div>
-           
-    
-    
-    
-    
-    
-    <?php
+             <?php
             include "inc.footer.php";
         ?>
         </body>
@@ -102,4 +88,3 @@ else {
     
     
 </main>
-
