@@ -1,6 +1,6 @@
 <?php
     // Hide PHP warnings/errors from being shown in HTML
-//    error_reporting(E_ERROR);
+    error_reporting(E_ERROR);
 
 include "../inc.head.php";
 include "../inc.nav.php";
@@ -103,39 +103,35 @@ include "../inc.nav.php";
  
         // Read db access file from ini
         $config = parse_ini_file('db.ini');                 // FOR LOCAL DEV
-    //        $config = parse_ini_file('/home/dev/db.ini');             // FOR SERVER DEPLOYED
 
         $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
 
-
         // Attempt connection to MySQL instance and start insertion flow
-        if ($conn -> connect_error) {
-            // ERROR - Failed to connect to MySQL instance (Wrong ini location / MySQL down)
-            $msg_error = "!! Error creating DB connection >> ". $conn -> connect_error ." << !!";
+        if (mysqli_connect_errno()) {
+            header("Location: ../load_error.php");
         } else {
 
             // SQL Prepared statement
             $stmt = $conn -> prepare("SELECT * FROM user WHERE Email = ?");
-           
+
             $res = $stmt -> bind_param('s', $Email);
-       
 
             //Execute SQL
             if (!$res = $stmt -> execute()) {
                 // ERROR - Failed to execute MySQL statement (Most common when duplicate entry)
                 $msg_error = "!! stmt failed to execute >> ". $stmt -> error . " << !!!";
-                
+
                 //invoking login failure fragment
                 include("../process/proc.loginfail_frag.php");
             } else {
                 // Fetch row regardless if empty
                 $res = $stmt -> get_result();
                 $row = $res->fetch_assoc();
-             
+
                 if (empty($row)) {
                     // ERROR - Checks if row is "empty" and throws error (Email not found)
                     $msg_error = "Email not found or password does not match.";
-                    
+
                     //invoking login failure fragment
                     include("../process/proc.loginfail_frag.php");
                 } else {
@@ -145,7 +141,7 @@ include "../inc.nav.php";
                     if (!password_verify($Password_Raw, $Password_Hashed_DB)) {
                         // ERROR - Throws error if password does not match DB
                         $msg_error = "Email not found or password does not match.";
-                        
+
                         //invoking login failure fragment
                         include("../process/proc.loginfail_frag.php");
                     } else { //password matches and user is verified
@@ -155,7 +151,7 @@ include "../inc.nav.php";
                         $Lname = $row['Lname'];
                         $HPNum = $row['HPNum'];
                         $IsAdmin = $row['IsAdmin'];
-                        
+
                         //Starting a session with the log on-ed variable
                         session_start();
                         $_SESSION['UID'] = $UID;
@@ -166,7 +162,7 @@ include "../inc.nav.php";
                         $_SESSION['HPNum'] = $HPNum;
                         $_SESSION['SessionId'] = session_id();
                         //echo 'the session id is: ' . $_SESSION["SessionId"];
-                        
+
                         //invoking login success fragment
                         include("../process/proc.loginsucc_frag.php");
                     }
