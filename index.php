@@ -67,7 +67,7 @@ include "inc.sessionauthless.php";
                 </div>
                 <!--How You Can Help-->
                 <div class="bg-light py-5">
-                    <div class="container py-5">
+                    <div class="container py-0">
                         <div class="row mb-4">
                             <div class="col-lg-12" style="text-align: center">
                                 <h2>How You Can Help</h2>
