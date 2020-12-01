@@ -20,6 +20,7 @@ include "inc.sessionauthless.php";
         <link rel="stylesheet" href="css/scroll_up.css">
     </head>
     <body>
+        <main>
         <button onclick="topFunction()" id="myBtn" title="Go to top">&#8593</button>
         <div id="parent-wrapper" class="d-flex flex-column min-vh-100">
             <?php
@@ -48,10 +49,10 @@ include "inc.sessionauthless.php";
                                 <h5 class="mb-0">Koh Jia Cheng</h5>
                                 <span class="small text-uppercase text-muted">2000665</span>
                                 <ul class="social mb-0 list-inline mt-3">
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="facebook" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="twitter" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="instagram" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="linkedin" class="social-link"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -63,10 +64,10 @@ include "inc.sessionauthless.php";
                                 <h5 class="mb-0">Foong Jun Hui</h5>
                                 <span class="small text-uppercase text-muted">2001267</span>
                                 <ul class="social mb-0 list-inline mt-3">
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="facebook" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="twitter" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="instagram" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="linkedin" class="social-link"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -78,10 +79,10 @@ include "inc.sessionauthless.php";
                                 <h5 class="mb-0">Daniel Tan</h5>
                                 <span class="small text-uppercase text-muted">2001240</span>
                                 <ul class="social mb-0 list-inline mt-3">
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="facebook" class="social-link"><i class="fa fa-facebook-f"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="twitter" class="social-link"><i class="fa fa-twitter"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="instagram" class="social-link"><i class="fa fa-instagram"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="linkedin" class="social-link"><i class="fa fa-linkedin"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -93,10 +94,10 @@ include "inc.sessionauthless.php";
                                 <h5 class="mb-0">Chandran P.</h5>
                                 <span class="small text-uppercase text-muted">2002947</span>
                                 <ul class="social mb-0 list-inline mt-3">
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                    <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="facebook" class="social-link"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="twitter" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="instagram" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item"><a href="#" aria-label="linkedin" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 </ul>
                             </div>
                         </div>
@@ -151,11 +152,12 @@ include "inc.sessionauthless.php";
                     <div class="col-xl-6 col-md-6 col-sm-12">
                         <br>
                         <div class="embed-responsive embed-responsive-1by1 p-4">
-                            <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.665252371279!2d103.84664861589684!3d1.377523398995323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1606633072921!5m2!1sen!2ssg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                            <iframe title="Location" class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.665252371279!2d103.84664861589684!3d1.377523398995323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da16e96db0a1ab%3A0x3d0be54fbbd6e1cd!2sSingapore%20Institute%20of%20Technology%20(SIT%40NYP)!5e0!3m2!1sen!2ssg!4v1606633072921!5m2!1sen!2ssg" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                         </div>
                     </div>
                 </div>
             </div>
+        </main>
             <?php
             include "inc.footer.php";
             ?>
