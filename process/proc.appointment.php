@@ -41,21 +41,25 @@ if(mysqli_connect_errno()){
         <?php
             include "../inc.nav.php";
             if ($result & $result2){
+                echo "<br>";
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                echo "<h2>Successful booking!</h2><br>";
+                echo "<h2>Successful booked! All there is to do now is to come to the appointment on time!</h2><br>";
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
                 echo "</div>";
                         echo "</div>";
             } else if (!$result){
+                echo "<br>";
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                echo "<h2>You are not allowed to book this cat!</h2>"
+                echo "<h2>Thank you for your interest however the current cat is currently booked by other members. Thank you for your "
+                . "kind understanding! </h2>"
                  .  "<br>" . mysqli_error($conn);
                 echo "<a href='../adopt.php' class= 'btn btn-lg btn-danger'>Back</a>";
                 echo "</div>";
                         echo "</div>";
             } else{
+                echo "<br>";
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
                 echo "<h2>There is a previous booking for this cat!</h2>"
