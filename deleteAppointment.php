@@ -53,6 +53,7 @@ else {
              <?php
             ?>
             <div class="container">
+               <div class="jumbotron">
                 <h3 class="selected">Cat selection:</h3>
                 
                         <?php
@@ -72,9 +73,12 @@ else {
                             <tr><b>Date: </b><?php echo $row['apptDate']; ?></tr><br>
                                 <br>
                                 <td><button type="submit" class="btn btn-primary" name="appointmentnext" value="appointmentnext">Confirm delete appointment</button></td>
-                           </tbody>
-                        </table>
-                        <?php echo"</form><br>";}?>
+                                
+                           </form>
+                            <td><a href="editAppointment.php" type="submit" id="deleteAppt" class="btn btn-danger" name="appointmentnext" value="appointmentnext">Back</a></td>
+                        </tbody><?php echo
+                        "</table>";}?>
+               </div>
             </div>
              <?php
             include "inc.footer.php";

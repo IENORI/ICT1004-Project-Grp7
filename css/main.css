@@ -60,8 +60,12 @@ figure img{
 }
 .selected{
     font-weight: bold;
+    
 }
 
+#deleteAppt{
+    margin-left: 20px;
+}
 
 
 
