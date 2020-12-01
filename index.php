@@ -52,7 +52,7 @@ include "inc.sessionauthless.php";
 <!--                    <br>-->
 <!--                </div>-->
 
-                <div id="index_callout_1" class="row container-fluid p-4 m-0">
+                <div id="index_callout_1" class="bg-light row container-fluid p-4 m-0">
                     <div class="col-md-6 col-xl-4 container align-self-center text-center">
                         <h1>Cat Sanctuary</h1>
                         <p>
@@ -66,7 +66,7 @@ include "inc.sessionauthless.php";
                     </div>
                 </div>
                 <!--How You Can Help-->
-                <div class="bg-light py-5">
+                <div class="py-5">
                     <div class="container py-0">
                         <div class="row mb-4">
                             <div class="col-lg-12" style="text-align: center">
