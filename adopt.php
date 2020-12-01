@@ -22,7 +22,6 @@ if (mysqli_connect_errno()) {
     } else {
         $msg = "No Record found";
     }
-    
 }
 ?>
 <!DOCTYPE html>
@@ -59,7 +58,7 @@ if (mysqli_connect_errno()) {
             <hr>
             <h6 class="appointmentCat">We are so excited for you to find a friend for life! Please read the information below for the adoption 
                 process!</h6>
-            <h6 class="appointmentCat">Can't find a suitable companion? Please revisit our site as we update frequently!<h6>
+            <h6 class="appointmentCat">Can't find a suitable companion? Please revisit our site as we update frequently!</h6>
                     </div>
                     <div class="container"> 
                         <br>
@@ -101,24 +100,22 @@ if (mysqli_connect_errno()) {
                                     <figcaption class="figure-caption">
                                         <table>
                                             <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result); 
-                                                
-                                               
-                                                        ?>
+                                                <?php $row = mysqli_fetch_assoc($result);
+                                                ?>
                                             <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 1" class="rounded figure-img img-fluid"></tr>
                                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                                 <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
                                                 <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
-                                            
-                                                        
-                                                        
+                                                        Make appointment</button></td>
+                                            </form>
+
+
+
+
                                             </tbody>
                                             <br>
                                         </table>
@@ -134,82 +131,21 @@ if (mysqli_connect_errno()) {
                                         <table>
                                             <tbody>
                                                 <?php $row = mysqli_fetch_assoc($result); ?>
-                                              <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
-                                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
-                                                <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
-                                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
-                                                <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
-
-
-                                            </tbody>
-
-
-                                            <br>
-
-                                        </table>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="col-sm" align="center">
-                                <figure class="figure">
-                                    <h4>Cat1</h4>
-
-                                    <figcaption class="figure-caption">
-                                        <table>
-                                            <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
-                                             <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
-                                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
-                                                <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
-                                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
-                                                <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
-
-
-                                            </tbody>
-
-                                            <br>
-
-                                        </table>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="row">
-                            <div class="col-sm"  align="center">
-                                <figure class="figure">
-                                    <h4>Cat1</h4>
-
-                                    <figcaption class="figure-caption">
-                                        <table>
-                                            <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
                                             <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 2" class="rounded figure-img img-fluid"></tr>
                                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                                 <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
                                                 <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
+                                                        Make appointment</button></td>
+                                            </form>
+
 
 
                                             </tbody>
+
 
                                             <br>
 
@@ -224,47 +160,18 @@ if (mysqli_connect_errno()) {
                                     <figcaption class="figure-caption">
                                         <table>
                                             <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
-                                              <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 3" class="rounded figure-img img-fluid"></tr>
                                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                                 <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
                                                 <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
+                                                        Make appointment</button></td>
+                                            </form>
 
-
-                                            </tbody>
-
-                                            <br>
-
-                                        </table>
-                                    </figcaption>
-                                </figure>
-                            </div>
-                            <div class="col-sm" align="center">
-                                <figure class="figure">
-                                    <h4>Cat1</h4>
-
-                                    <figcaption class="figure-caption">
-                                        <table>
-                                            <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
-                                              <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
-                                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
-                                                <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
-                                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
-                                                <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
 
 
                                             </tbody>
@@ -285,18 +192,18 @@ if (mysqli_connect_errno()) {
                                     <figcaption class="figure-caption">
                                         <table>
                                             <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
-                                              <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 4" class="rounded figure-img img-fluid"></tr>
                                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                                 <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
                                                 <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
+                                                        Make appointment</button></td>
+                                            </form>
+
 
 
                                             </tbody>
@@ -314,18 +221,18 @@ if (mysqli_connect_errno()) {
                                     <figcaption class="figure-caption">
                                         <table>
                                             <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
-                                              <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 5" class="rounded figure-img img-fluid"></tr>
                                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                                 <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
                                                 <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
+                                                        Make appointment</button></td>
+                                            </form>
+
 
 
                                             </tbody>
@@ -343,27 +250,117 @@ if (mysqli_connect_errno()) {
                                     <figcaption class="figure-caption">
                                         <table>
                                             <tbody>
-                                                <?php $row = mysqli_fetch_assoc($result);?>
-                                              <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                                <tr><img src="<?php echo $row['Images'] ?>" class="rounded figure-img img-fluid"></tr>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 6" class="rounded figure-img img-fluid"></tr>
                                                 <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                                 <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                                 <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                                        <tr><b>Age: </b><?php echo $row['Age']?> 
-                                                                </tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
                                                 <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                                       Make appointment</button></td>
-                                                       </form>
-                                                    
+                                                        Make appointment</button></td>
+                                            </form>
+
 
 
                                             </tbody>
 
                                             <br>
-                                            
 
                                         </table>
-                                        
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm"  align="center">
+                                <figure class="figure">
+                                    <h4>Cat1</h4>
+
+                                    <figcaption class="figure-caption">
+                                        <table>
+                                            <tbody>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 7" class="rounded figure-img img-fluid"></tr>
+                                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
+                                                <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
+                                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
+                                                <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
+                                                        Make appointment</button></td>
+                                            </form>
+
+
+
+                                            </tbody>
+
+                                            <br>
+
+                                        </table>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm" align="center">
+                                <figure class="figure">
+                                    <h4>Cat1</h4>
+
+                                    <figcaption class="figure-caption">
+                                        <table>
+                                            <tbody>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 8" class="rounded figure-img img-fluid"></tr>
+                                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
+                                                <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
+                                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
+                                                <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
+                                                        Make appointment</button></td>
+                                            </form>
+
+
+
+                                            </tbody>
+
+                                            <br>
+
+                                        </table>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm" align="center">
+                                <figure class="figure">
+                                    <h4>Cat1</h4>
+
+                                    <figcaption class="figure-caption">
+                                        <table>
+                                            <tbody>
+                                                <?php $row = mysqli_fetch_assoc($result); ?>
+                                            <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                                <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 9" class="rounded figure-img img-fluid"></tr>
+                                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
+                                                <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
+                                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
+                                                <tr><b>Age: </b><?php echo $row['Age'] ?> 
+                                                </tr><br>
+                                                <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
+                                                        Make appointment</button></td>
+                                            </form>
+
+
+
+                                            </tbody>
+
+                                            <br>
+
+
+                                        </table>
+
                                     </figcaption>
                                 </figure>
                             </div>
@@ -391,7 +388,6 @@ if (mysqli_connect_errno()) {
                      </main> -->
 
                     <?php
-                    
                     include "inc.footer.php";
                     ?>
                     <script src="js/adoption_info.js"></script>
