@@ -36,7 +36,7 @@
                 <a class="nav-link" href="../aboutus.php">About Us</a>
             </li>
             <?php 
-            if ($_SESSION['SessionId']){
+            if (isset($_SESSION['SessionId'])){
                 echo "<li class='nav-item'>
                 <a class='nav-link' href='../editAppointment.php'>Appointment</a>
             </li>";
