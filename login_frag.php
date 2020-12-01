@@ -29,13 +29,16 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-xl-6">
                         <?php
-                        if (isset($_GET["err"])) {
-                            if ($_GET["err"] == 0) {
-                                include "inc.signup_succ.php";
-                            } else if ($_GET["err"] == 2) {
-                                include "inc.no_access.php";
+                            error_reporting(E_ERROR);
+                            if (isset($_GET["err"])) {
+                                if ($_GET["err"] == 0) {
+                                    include "inc.signup_succ.php"; //success from signup
+                                } else if ($_GET["err"] == 1) {
+                                    include "inc.form_invalid.php"; //invalid form data
+                                } else if ($_GET["err"] == 2) {
+                                    include "inc.no_access.php"; //db conn err
+                                }
                             }
-                        }
                         ?>
                         <div class="card">
                             <h4 class="card-header bg-success text-white">Login</h4>

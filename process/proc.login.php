@@ -27,6 +27,7 @@ include "../inc.nav.php";
         empty($post_req["login_Password"])) {
 
         $msg_error = "Invalid login data";
+        header("Location: ../login.php?err=1");
     } else {
         // Sanitize Email
         $Email = sanitize_input($post_req["login_Email"]);
@@ -63,6 +64,7 @@ include "../inc.nav.php";
     function verify_email($Email, $msg_error) {
         if (!filter_var($Email, FILTER_VALIDATE_EMAIL)) {
             $msg_error = "!! Email format is invalid !!";
+            header("Location: ../login.php?err=1");
         } else {
             $Email = sanitize_input($Email);
         }
@@ -83,6 +85,7 @@ include "../inc.nav.php";
 
         if (!password_verify($pwd_raw, $pwd_db)){
             $msg_error = "Email not found or password does not match.";
+            header("Location: ../login.php?err=1");
         }
 
         return array($pwd_db, $msg_error);

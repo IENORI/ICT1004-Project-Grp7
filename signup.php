@@ -29,9 +29,12 @@
                 <div class="row justify-content-center">
                     <div class="col-md-8 col-xl-6">
                         <?php
+                            error_reporting(E_ERROR);
                             if (isset($_GET["err"])) {
                                 if ($_GET["err"] == 1) {
-                                    include "inc.signup_fail.php";
+                                    include "inc.signup_fail.php"; //duplicate data
+                                } else if ($_GET["err"] == 2) {
+                                    include "inc.form_invalid.php"; //invalid form data
                                 }
                             }
                         ?>

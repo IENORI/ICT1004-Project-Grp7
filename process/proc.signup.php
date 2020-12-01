@@ -46,6 +46,7 @@
         empty($post_req["signup_PasswordConfirm"])) {
 
         $msg_error = "!! Invalid form data !!";
+        header("Location: ../signup.php?err=2");
     } else {
         // Sanitize Fname, Lname, HPNum
         $Fname = sanitize_input($post_req["signup_FirstName"]);
@@ -98,6 +99,7 @@
     function verify_email($Email, $msg_error) {
         if (!filter_var($Email, FILTER_VALIDATE_EMAIL)) {
             $msg_error = "!! Email format is invalid !!";
+            header("Location: ../signup.php?err=2");
         } else {
             $Email = sanitize_input($Email);
         }
@@ -118,6 +120,7 @@
     function verify_password($Password, $pwd_raw, $pwd_con, $msg_error) {
         if ($pwd_con != $pwd_raw) {
             $msg_error = "!! Passwords do not match !!";
+            header("Location: ../signup.php?err=2");
         } else {
             $Password = password_hash($pwd_raw, PASSWORD_DEFAULT);
         }
@@ -143,10 +146,8 @@
 
         // Read db access file from ini
         $config = parse_ini_file('db.ini');                 // FOR LOCAL DEV
-        //$config = parse_ini_file('/home/dev/db.ini');             // FOR SERVER DEPLOYED
 
         $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
-
 
         // Attempt connection to MySQL instance and start insertion flow
         if (mysqli_connect_errno()) {            // ERROR - Failed to connect to MySQL instance (Wrong ini location / MySQL down)
