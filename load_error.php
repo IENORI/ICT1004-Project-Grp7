@@ -22,6 +22,7 @@
                     <div class="jumbotron mt-3">
                         <h2>⛔️⛔️ Whoops! ⛔️⛔️</h2>
                         <p class="lead">Looks like our systems are facing some issues, check back again later.</p>
+                        <p><small>ERR : <mark>Database connection failed.</mark></small></p>
                         <hr class="my-4">
                         <p class="lead">
                             <a class="btn btn-primary" href="/" role="button">Back to Home</a>

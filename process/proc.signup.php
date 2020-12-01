@@ -149,9 +149,8 @@
 
 
         // Attempt connection to MySQL instance and start insertion flow
-        if ($conn -> connect_error) {
-            // ERROR - Failed to connect to MySQL instance (Wrong ini location / MySQL down)
-            $msg_error = "!! Error creating DB connection >> ". $conn -> connect_error ." << !!";
+        if (mysqli_connect_errno()) {            // ERROR - Failed to connect to MySQL instance (Wrong ini location / MySQL down)
+            header("Location: ../load_error.php");
         } else {
             //Type cast HPNum back to int for SQL
             $HPNum = (int)$HPNum;
