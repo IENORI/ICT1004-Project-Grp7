@@ -80,16 +80,7 @@ else {
                                         <tr><b>Age: </b><?php echo $row['Age']; ?></tr><br>
                                         <tr><b>Date: </b><?php echo $row['apptDate']; ?></tr><br>
 <!--=======-->
-                            <h3 class="selected">Cat selection:</h3>
-                            <table>
-                            <tbody> 
-                                <form action="process/proc.editAppointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                <tr><img src="<?php echo $row['Images']?>" class="appointmentImage"></tr><br><br>
-                                <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
-                                <tr><b>Description: </b> <?php echo $row['Description']; ?></tr><br>
-                                <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                            <tr><b>Age: </b><?php echo $row['Age']; ?></tr><br>
-                            <tr><b>Date: </b><?php echo $row['apptDate']; ?></tr><br>
+                          
 
                                 <tr><label for="selecttime"><b>Select new Date and Time of appointment:</b></label><br>
                                 <input type="datetime-local"  id="selecttime" name="selecttime" REQUIRED></tr>
