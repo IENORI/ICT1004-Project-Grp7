@@ -9,10 +9,9 @@ $user = $UID;
 
 
 if (mysqli_connect_errno()) {
-    echo mysqli_connect_error();
-    exit();
+    header("Location: ../load_error.php");
+}
 ///<<<<<<< Updated upstream
-} //else {
 
     //$selectQuery = "SELECT cat.CID, cat.Images, cat.CatName, cat.Description, cat.CatType, cat.Age, appointment.apptDate FROM `cat`, `appointment`, `user`  WHERE cat.CID = appointment.CCID AND appointment.UUID = $UID";
 //=======
@@ -60,7 +59,9 @@ else {
                     if ($row2['UID'] != $UID) {
                         echo "<div class='container'>";
                         echo "<div class='jumbotron'>";
-                        echo "<h2>There is no appointment booked by you! Book yours now!</h2><br>";
+                        echo "<h2>Whoops!️</h2>";
+                        echo "<p>There is no appointment booked by you! Book yours now!</p>";
+                         echo "<hr class='my-4'>";
                         echo "<a href='../adopt.php' class= 'btn btn-lg btn-success'>Book cat</a>";
                         echo "</div>";
                         echo "</div>";
@@ -100,7 +101,7 @@ else {
                     
                     <br>
                     <br>
-<!-->>>>>>> Stashed changes-->
+
 
                                         
                  

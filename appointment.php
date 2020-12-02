@@ -9,8 +9,7 @@ $conn = new mysqli($config['servername'], $config['username'], $config['password
 $user = (!isset($_SESSION['UID']));
 
 if (mysqli_connect_errno()) {
-    echo "<br><h4>You are not connected to the server</br></h4>";
-    exit();
+    header("Location: ../load_error.php");
 } else {
     $selectQuery = "SELECT * FROM `cat` WHERE `CID` =" . $_GET['id'];
     $result = mysqli_query($conn, $selectQuery);
@@ -52,7 +51,7 @@ if (mysqli_connect_errno()) {
                     if (!isset($_SESSION['UID'])) {
                         echo "<div class='container'>";
                         echo "<div class='jumbotron'>";
-                        echo "<h2>Whoops,</h2>";
+                        echo "<h2>Whoops!</h2>";
                         echo "<p class='lead selected'>Please login before booking an appointment.</p>";
                         echo "<hr class='my-4'>";
                         echo "<a href='login.php' class= 'btn btn-lg btn-danger'>Login</a>";
