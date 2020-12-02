@@ -100,6 +100,7 @@ if (mysqli_connect_errno()) {
                                     <?php $row = mysqli_fetch_assoc($result);
                                     ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 1" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -126,6 +127,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 2" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -154,6 +156,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 3" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -184,6 +187,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 4" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -211,6 +215,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 5" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -238,6 +243,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 6" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -268,6 +274,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 7" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -295,6 +302,7 @@ if (mysqli_connect_errno()) {
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 8" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
@@ -321,7 +329,9 @@ if (mysqli_connect_errno()) {
                             <table>
                                 <tbody>
                                     <?php $row = mysqli_fetch_assoc($result); ?>
+                              
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+                                    <br>
                                     <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 9" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
