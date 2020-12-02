@@ -59,6 +59,7 @@ if(mysqli_connect_errno()){
             } 
             else {
 //>>>>>>> Stashed changes
+                echo "<br>";
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
                   echo "<h2>Cat booking exists</h2>"
