@@ -39,7 +39,7 @@ if(mysqli_connect_errno()){
             if ($result && $result2){
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                echo "<h2>Whoops!️</h2>";
+                echo "<h2>Success!️</h2>";
                 echo "<p>Delete appointment successfully!</p><br>";
                  echo "<hr class='my-4'>";
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";

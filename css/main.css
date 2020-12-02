@@ -106,14 +106,11 @@ figure img{
     border-radius: 10px;  
     background: red;
     position: relative;
-    animation: mymove 5s infinite;
+    
 }
 
 
-@keyframes mymove {
-  from {left: 0px;}
-  to {left: 200px;}
-}
+
 .col-sm{
      
      margin: auto; 

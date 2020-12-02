@@ -51,6 +51,7 @@ if(mysqli_connect_errno()){
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
                 echo "<h2>Successful booked! All there is to do now is to come to the appointment on time!</h2><br>";
+                echo  "<hr class='my-4'>";
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
                 echo "</div>";
                         echo "</div>";
