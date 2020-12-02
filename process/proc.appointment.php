@@ -13,8 +13,7 @@ $conn = new mysqli($config['servername'], $config['username'], $config['password
 
 
 if(mysqli_connect_errno()){
-    echo "<br><h4>You are not connected to the server</br></h4>";
-    exit();
+    header("Location: ../load_error.php");
 }else{
     $id = $_GET['id'];
     $date = date('Y-m-d H:i:s');
@@ -61,8 +60,10 @@ if(mysqli_connect_errno()){
 //>>>>>>> Stashed changes
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                  echo "<h2>Cat booking exists</h2>"
+                echo "<h2>Whoops!️</h2>";
+                echo "<p>Cat booking exists</p>"
                  .  "<br>" . mysqli_error($conn);
+                 echo "<hr class='my-4'>";
                 echo "<a href='../editAppointment.php'  class= 'btn btn-lg btn-success'>Check for existing appointment</a>";
                 echo "<a href='../adopt.php' id='backAppt' class='btn btn-lg btn-danger'>Back</a>";
                 echo "</div>";

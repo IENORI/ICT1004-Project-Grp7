@@ -11,8 +11,7 @@ $user = (isset($_SESSION['UID']));
 
 
 if(mysqli_connect_errno()){
-    echo mysqli_connect_error();
-    exit();
+    header("Location: ../load_error.php");
 }
 else {
     

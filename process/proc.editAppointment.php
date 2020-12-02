@@ -13,8 +13,7 @@ $conn = new mysqli($config['servername'], $config['username'], $config['password
 
 
 if(mysqli_connect_errno()){
-    echo "<br><h4>You are not connected to the server</br></h4>";
-    exit();
+    header("Location: ../load_error.php");
 }
     else{
     $id = $_GET['id'];
@@ -40,7 +39,9 @@ if(mysqli_connect_errno()){
             if ($result){
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                echo "<h2>Booking edited successfully!</h2><br>";
+                echo "<h2>Whoops!</h2>";
+                echo "<p>Booking edited successfully!</p><br>";
+                echo "<hr class='my-4'>";
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
                 echo "</div>";
                         echo "</div>";
