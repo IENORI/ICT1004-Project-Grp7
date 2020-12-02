@@ -69,7 +69,7 @@
             include "inc.nav.php";
         ?>
         <br>
-        <div class="container">
+        <div class="container-fluid">
             <table id="usertable" class="table table-hover">
                 <thead>
                     <tr>
