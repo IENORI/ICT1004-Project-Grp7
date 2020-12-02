@@ -94,8 +94,6 @@ if (mysqli_connect_errno()) {
                 <div class="col-sm"  align="center">
 
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -123,9 +121,6 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="col-sm" align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -154,8 +149,6 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="col-sm" align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -186,8 +179,6 @@ if (mysqli_connect_errno()) {
             <div class="row">
                 <div class="col-sm"  align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -215,8 +206,6 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="col-sm" align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -244,8 +233,6 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="col-sm" align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -276,8 +263,6 @@ if (mysqli_connect_errno()) {
             <div class="row">
                 <div class="col-sm"  align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -305,8 +290,6 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="col-sm" align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
@@ -334,8 +317,6 @@ if (mysqli_connect_errno()) {
                 </div>
                 <div class="col-sm" align="center">
                     <figure class="figure">
-                        <h4>Cat1</h4>
-
                         <figcaption class="figure-caption">
                             <table>
                                 <tbody>
