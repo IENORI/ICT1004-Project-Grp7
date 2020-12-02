@@ -11,16 +11,16 @@ $user = $UID;
 if (mysqli_connect_errno()) {
     echo mysqli_connect_error();
     exit();
-<<<<<<< Updated upstream
-} else {
+///<<<<<<< Updated upstream
+} //else {
 
-    $selectQuery = "SELECT cat.CID, cat.Images, cat.CatName, cat.Description, cat.CatType, cat.Age, appointment.apptDate FROM `cat`, `appointment`, `user`  WHERE cat.CID = appointment.CCID AND appointment.UUID = $UID";
-=======
-}
+    //$selectQuery = "SELECT cat.CID, cat.Images, cat.CatName, cat.Description, cat.CatType, cat.Age, appointment.apptDate FROM `cat`, `appointment`, `user`  WHERE cat.CID = appointment.CCID AND appointment.UUID = $UID";
+//=======
+//}
 else {
     
     $selectQuery = "SELECT * FROM `cat`, `appointment`, `user`  WHERE cat.CID = appointment.CCID AND appointment.UUID = $UID";
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
     $selectQuery2 = "SELECT * FROM user WHERE user.UID IN (SELECT appointment.UUID FROM appointment)";
     $result = mysqli_query($conn, $selectQuery);
     $result2 = mysqli_query($conn, $selectQuery2);
@@ -68,7 +68,7 @@ else {
                         ?>
                         <div class="container">
                             <div class="jumbotron">
-<<<<<<< Updated upstream
+<!--<<<<<<< Updated upstream-->
                                 <h3 class="selected">Cat selection:</h3>
                                 <table>
                                     <tbody> 
@@ -79,7 +79,7 @@ else {
                                         <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
                                         <tr><b>Age: </b><?php echo $row['Age']; ?></tr><br>
                                         <tr><b>Date: </b><?php echo $row['apptDate']; ?></tr><br>
-=======
+<!--=======-->
                             <h3 class="selected">Cat selection:</h3>
                             <table>
                             <tbody> 
@@ -109,24 +109,13 @@ else {
                     
                     <br>
                     <br>
->>>>>>> Stashed changes
+<!-->>>>>>> Stashed changes-->
 
-                                        <tr><label for="selecttime"><b>Select new Date and Time of appointment:</b></label><br>
-                                        <input type="datetime-local"  id="selecttime" name="selecttime" REQUIRED></tr>
-                                        <br>
-                                        <br>
-                                        <td><button type="submit" class="btn btn-primary" name="appointmentnext" value="appointmentnext">Confirm edit appointment</button></td>
-                                        <td><a href='deleteAppointment.php' button='submit' id="deleteAppt" class='btn btn-primary' name='appointmentnext' value='appointmentnext'>Delete appointment</a></td>
-                                    </form>
-                                    </tbody>
-                                </table>
-                            </div><?php
-                            echo"</div>";
-                        }
-                        ?>
+                                        
+                 
                         <br>
                         <br>
-                    </div>
+                    
                 </div>
             </div>
         </main>

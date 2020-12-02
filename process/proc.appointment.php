@@ -55,23 +55,10 @@ if(mysqli_connect_errno()){
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
                 echo "</div>";
                         echo "</div>";
-<<<<<<< Updated upstream
-            } else if (!$result){
-                echo "<br>";
-                echo "<div class='container'>";
-                echo "<div class='jumbotron'>";
-                echo "<h2>Thank you for your interest however the current cat is currently booked by other members. Thank you for your "
-                . "kind understanding! </h2>"
-                 .  "<br>" . mysqli_error($conn);
-                echo "<a href='../adopt.php' class= 'btn btn-lg btn-danger'>Back</a>";
-                echo "</div>";
-                        echo "</div>";
-            } else{
-                echo "<br>";
-=======
-            }
+//<<<<<<< Updated upstream
+            } 
             else {
->>>>>>> Stashed changes
+//>>>>>>> Stashed changes
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
                   echo "<h2>Cat booking exists</h2>"
