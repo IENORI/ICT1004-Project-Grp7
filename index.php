@@ -101,7 +101,7 @@ include "inc.sessionauthless.php";
                                          alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm align-self-center">
                                     <h5 class="mb-0 pb-3">Donation</h5>
                                     <span class="small">Your funds will support our welfare services for these little
-                                        furballs!</span>
+                                        furballs! Help them today!</span>
                                     <br>
                                     <a href="adopt.php" class="btn btn-secondary px-4">Find out more!</a>
                                 </div>
