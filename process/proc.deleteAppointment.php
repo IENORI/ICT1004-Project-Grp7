@@ -37,15 +37,16 @@ if(mysqli_connect_errno()){
     <body>
          <?php
             include "../inc.nav.php";
-            if ($result){
+            if ($result && $result2){
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                echo "<h2>Delete record successfully!</h2><br>";
+                echo "<h2>Delete appointment successfully!</h2><br>";
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
                 echo "</div>";
                         echo "</div>";
             }else{
-                echo "hello";
+                echo "Try again";
+                echo "<a href='../index.php' class= 'btn btn-lg btn-success'>deleteAppointment.php</a>";
             }
             mysqli_close($conn);
     

@@ -26,8 +26,15 @@ if(mysqli_connect_errno()){
     
     $insertQuery = "INSERT INTO `appointment` (currentDate, apptDate, status, CCID, UUID) VALUES('$date', '$apptDate', 'booked', '$id', '$user')";
     $updateQuery = "UPDATE `user` SET haveAppt='Yes' WHERE UID=$user";
+    $selectQuery = "SELECT * FROM user WHERE user.UID IN (SELECT appointment.UUID FROM appointment WHERE appointment.CCID IN (SELECT cat.CID FROM cat))";
+   
     $result = mysqli_query($conn,$insertQuery);
     $result2 = mysqli_query($conn, $updateQuery);
+    $result3 = mysqli_query($conn, $selectQuery);
+    
+    
+    $row = mysqli_fetch_assoc($result3);
+    
 
 ?>
 <html lang="en">
@@ -48,23 +55,16 @@ if(mysqli_connect_errno()){
                 echo "<a href='../index.php' class= 'btn btn-lg btn-success'>Home</a>";
                 echo "</div>";
                         echo "</div>";
-            } else if (!$result){
-                echo "<br>";
+//<<<<<<< Updated upstream
+            } 
+            else {
+//>>>>>>> Stashed changes
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
-                echo "<h2>Thank you for your interest however the current cat is currently booked by other members. Thank you for your "
-                . "kind understanding! </h2>"
+                  echo "<h2>Cat booking exists</h2>"
                  .  "<br>" . mysqli_error($conn);
-                echo "<a href='../adopt.php' class= 'btn btn-lg btn-danger'>Back</a>";
-                echo "</div>";
-                        echo "</div>";
-            } else{
-                echo "<br>";
-                echo "<div class='container'>";
-                echo "<div class='jumbotron'>";
-                echo "<h2>There is a previous booking for this cat!</h2>"
-                 .  "<br>" . mysqli_error($conn);
-                echo "<a href='../adopt.php' class= 'btn btn-lg btn-danger'>Back</a>";
+                echo "<a href='../editAppointment.php'  class= 'btn btn-lg btn-success'>Check for existing appointment</a>";
+                echo "<a href='../adopt.php' id='backAppt' class='btn btn-lg btn-danger'>Back</a>";
                 echo "</div>";
                         echo "</div>";
             }
