@@ -36,19 +36,23 @@
 
                                     <div class="form-group">
                                         <label for="Edited_Email">Email Address: </label>
-                                        <input required type="email" class="form-control" id="Edited_Email" name="Edited_Email" value="<?php echo $Email; ?>">
+                                        <input required type="email" class="form-control" id="Edited_Email" name="Edited_Email" 
+                                               value="<?php echo $Email; ?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="Edit_Email">First Name: </label>
-                                        <input required maxlength="45" type="text" class="form-control" id="Edited_Fname" name="Edited_Fname" value="<?php echo $Fname; ?>">
+                                        <input required maxlength="45" type="text" class="form-control" id="Edited_Fname" name="Edited_Fname" 
+                                               value="<?php echo $Fname; ?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="Edit_Email">Last Name: </label>
-                                        <input required maxlength="45" type="text" class="form-control" id="Edited_Lname" name="Edited_Lname" value="<?php echo $Lname; ?>">
+                                        <input required maxlength="45" type="text" class="form-control" id="Edited_Lname" name="Edited_Lname" 
+                                               value="<?php echo $Lname; ?>">
                                     </div>
                                     <div class="form-group">
                                         <label for="Edit_Email">Phone Number: </label>
-                                        <input required max="99999999" min="60000000" type="number" class="form-control" id="Edited_HPNum" name="Edited_HPNum" value="<?php echo $HPNum; ?>">
+                                        <input required max="99999999" min="60000000" type="number" class="form-control" id="Edited_HPNum" name="Edited_HPNum" 
+                                               value="<?php echo $HPNum; ?>">
                                     </div>
                                     <hr class="my-4">
                                     <div class="form-group text-center">

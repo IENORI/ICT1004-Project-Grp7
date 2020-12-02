@@ -54,6 +54,15 @@
         <?php
             include "inc.head.php";
         ?>
+        <script src="https://cdn.datatables.net/1.10.22/js/jquery.dataTables.min.js"></script>
+        <script src="https://cdn.datatables.net/1.10.22/js/dataTables.bootstrap4.min.js"></script>
+
+        
+        <script>
+        $(document).ready(function() {
+            $('#usertable').DataTable();
+        } );
+        </script>
     </header>
     <div class="body">
         <?php 
@@ -61,7 +70,7 @@
         ?>
         <br>
         <div class="container">
-            <table class="table table-hover">
+            <table id="usertable" class="table table-hover">
                 <thead>
                     <tr>
                         <th scope="col">User ID</th>
