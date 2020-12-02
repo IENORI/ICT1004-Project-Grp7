@@ -71,7 +71,7 @@ include "inc.sessionauthless.php";
                                     </ul>
                                 </div>
                             </div>
-<<<<<<< Updated upstream
+
                             <!--Member-->
                             <div class="col-xl-3 col-sm-6 mb-5">
                                 <div class="bg-white rounded shadow-sm py-5 px-4">
@@ -87,22 +87,8 @@ include "inc.sessionauthless.php";
                                     </ul>
                                 </div>
                             </div>
-                            <!--Member-->
-                            <div class="col-xl-3 col-sm-6 mb-5">
-                                <div class="bg-white rounded shadow-sm py-5 px-4">
-                                    <img src="media/image/free-vector-business-man-avatar-silhouette.jpg"
-                                         alt="" width="100" class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm">
-                                    <h5 class="mb-0">Chandran P.</h5>
-                                    <span class="small text-uppercase text-muted">2002947</span>
-                                    <ul class="social mb-0 list-inline mt-3">
-                                        <li class="list-inline-item"><a href="#" aria-label="facebook" class="social-link"><i class="fa fa-facebook-f" aria-hidden="true"></i></a></li>
-                                        <li class="list-inline-item"><a href="#" aria-label="twitter" class="social-link"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-                                        <li class="list-inline-item"><a href="#" aria-label="instagram" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
-                                        <li class="list-inline-item"><a href="#" aria-label="linkedin" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                                    </ul>
-                                </div>
-=======
-                        </div>
+                            
+                            
                         <!--Member-->
                         <div class="col-xl-3 col-sm-6 mb-5">
                             <div class="bg-white rounded shadow-sm py-5 px-4">
@@ -116,7 +102,7 @@ include "inc.sessionauthless.php";
                                     <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
                                     <li class="list-inline-item"><a href="#" class="social-link"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
                                 </ul>
->>>>>>> Stashed changes
+
                             </div>
                         </div>
                     </div>
