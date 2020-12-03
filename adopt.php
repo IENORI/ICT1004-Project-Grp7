@@ -109,9 +109,11 @@ if (mysqli_connect_errno()) {
                                     <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
                                     <tr><b>Age: </b><?php echo $row['Age'] ?> 
                                     </tr><br>
+                                    
                                     <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                            Make appointment</button></td>
+                                    Make appointment</button></td>
                                 </form>
+                                            
 
 
 
