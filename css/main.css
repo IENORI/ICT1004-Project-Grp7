@@ -111,7 +111,7 @@ figure img{
 
 
 
-.col-sm{
+.col-sm-4{
      
      margin: auto; 
      margin-top: 3%; 
@@ -121,4 +121,11 @@ figure img{
      background-clip: padding-box; 
      border-radius: 5px; 
     
+}
+.catlist{
+    text-align: center;
+}
+.catimage{
+    height: 150px;
+    width: 200px;
 }
