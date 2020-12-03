@@ -8,11 +8,26 @@
     padding: 0;
 }
 
+/*styling of image at adopt.php*/
 .rounded figure-img img-fluid{
     border-style: double;
     border-color: gray;
     vertical-align: top;
 }
+
+.col-sm-4{
+     
+     margin: auto; 
+     margin-top: 3%; 
+     text-align: center; 
+     border: 8px double rgba(0, 100, 60, .4); 
+     
+     background-clip: padding-box; 
+     border-radius: 5px; 
+    
+}
+
+/*for image popup when clicked at adopt.php*/
 .image_popup{
     position: absolute;
     height: 200px;
@@ -111,17 +126,6 @@ figure img{
 
 
 
-.col-sm-4{
-     
-     margin: auto; 
-     margin-top: 3%; 
-     text-align: center; 
-     border: 8px double rgba(0, 100, 60, .4); 
-     
-     background-clip: padding-box; 
-     border-radius: 5px; 
-    
-}
 .catlist{
     text-align: center;
 }

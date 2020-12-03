@@ -62,6 +62,7 @@ if (mysqli_connect_errno()) {
                             
                                     </tbody>
                                 </table>
+                       
                         
                         
                         <h3 class="catlist">Edit cat</h3>
@@ -89,9 +90,10 @@ if (mysqli_connect_errno()) {
                                     <input type="text" class="form-control" id="cat_age" name="cat_age" placeholder="Enter Age">
                             </div>
                            <div class="form-group">
-                                    <button type="submit" class="btn btn-success">Submit</button>
+                                    <button type="submit" class="btn btn-success">Confirm edit</button>
                             </div>
                                </form>
+                         <a href="process/proc.deleteCat.php?id=<?php echo $row['CID']; ?>" class="btn btn-success" onclick="return confirm('Do you want to confirm deleting this record?');">Delete record</a>
                             </div>
                         </div>
                         

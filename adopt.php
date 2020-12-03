@@ -13,7 +13,7 @@ if (mysqli_connect_errno()) {
 //    exit();
     header("Location: ../load_error.php");
 } else {
-    $selectQuery = "SELECT * FROM `cat` ORDER BY `CID` ASC";
+    $selectQuery = "SELECT * FROM `cat` ORDER BY `CID` ASC"; //cats will displayed in ascending order by the id of the cats 
  
     $result = mysqli_query($conn, $selectQuery);
    
