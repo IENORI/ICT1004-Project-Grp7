@@ -103,7 +103,7 @@ if (mysqli_connect_errno()) {
                                     
                                 <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
                                     <br>
-                                    <tr><img src="<?php echo $row['Images'] ?>" alt="Cat 1" class="rounded figure-img img-fluid"></tr>
+                                    <tr><img src="<?php echo $row['Images'] ?>" alt="imageCat" class="rounded figure-img img-fluid"></tr>
                                     <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
                                     <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
                                     <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>

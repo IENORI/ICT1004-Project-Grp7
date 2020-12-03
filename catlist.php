@@ -20,7 +20,7 @@
     if(mysqli_connect_errno()){
         header("Location: ../load_error.php");
     }else{
-        $selectQuery = "SELECT * FROM cat";
+        $selectQuery = "SELECT * FROM cat ORDER BY `CID` ASC";
         $result = mysqli_query($conn, $selectQuery);
         
         
@@ -72,10 +72,12 @@
                 $description = $row['Description'];
                 $type = $row['CatType'];
                 $age = $row['Age'];
-                echo "<tr><td>".$id."</td><td><img src='$image' alt='Cat 1' class='catimage'></td><td>".$name."</td><td>".$description."</td><td>"
-                        .$type."</td><td>".$age."</td><td><a href='../editCat.php' class= 'btn btn-lg btn-success'>Edit</a>"
-                        . "<br><br><a href='../deleteCat.php' class= 'btn btn-lg btn-danger'>Delete</a></td></tr>";
-            }
+                ?>
+                <form action="editCat.php?id=<?php echo $id; ?>" method="post">
+                <?php  
+                echo "<tr><td>".$id."</td><td><img src='$image' alt='imageCat' class='catimage'></td><td>".$name."</td><td>".$description."</td><td>"
+                        .$type."</td><td>".$age."</td><td><button type='submit' class='btn btn-success'>Edit</button></td></tr></form>
+            ";}
             echo "</table>";
             ?>
                 </div>
