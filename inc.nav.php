@@ -37,9 +37,11 @@
             </li>
             <?php 
             if (isset($_SESSION['SessionId'])){
+                if($_SESSION['IsAdmin'] == 0){
                 echo "<li class='nav-item'>
                 <a class='nav-link' href='../editAppointment.php'>Appointment</a>
             </li>";
+                }
             }
                 if($IsAdmin){
                     include "inc.navadmin.php";
