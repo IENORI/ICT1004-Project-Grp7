@@ -36,6 +36,7 @@ if(mysqli_connect_errno()){
     <body>
          <?php
             include "../inc.nav.php";
+            echo "<br>";
             if ($result && $result2){
                 echo "<div class='container'>";
                 echo "<div class='jumbotron'>";
