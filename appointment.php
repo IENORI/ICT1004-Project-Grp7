@@ -91,7 +91,7 @@ if (mysqli_num_rows($result) > 0) {
 <!--                </div>-->
 <!--            </div>-->
             <div class="row justify-content-center">
-                <div class="col-md-6 col-xl-4">
+                <div class="col-md-6 col-xl-3">
                     <div class="card bg-info mb-4">
                         <div class="card-header">
                             <h4 class="my-auto text-white">New Cat Viewing Appointment</h4>
