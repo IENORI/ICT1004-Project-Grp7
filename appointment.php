@@ -59,6 +59,7 @@ if (mysqli_num_rows($result) > 0) {
             echo "</div>";
         } else {
             ?>
+<<<<<<< Updated upstream
 <!--            <div class="container">-->
 <!--                <div class="jumbotron">-->
 <!--                    <h3 class="selected">Cat selection:</h3>-->
@@ -95,6 +96,63 @@ if (mysqli_num_rows($result) > 0) {
                     <div class="card bg-info mb-4">
                         <div class="card-header">
                             <h4 class="my-auto text-white">New Cat Viewing Appointment</h4>
+=======
+        </head>
+        <body>
+
+
+            <div id="parent-wrapper" class="d-flex flex-column min-vh-100">
+                <?php
+                include "inc.nav.php";
+                ?>
+                <br>
+                <main id="content-wrapper" class="container-fluid p-0 m-0">
+                    <?php
+                    if (!isset($_SESSION['UID'])) {
+                        echo "<div class='container'>";
+                        echo "<div class='jumbotron'>";
+                        echo "<h2>Whoops!</h2>";
+                        echo "<p class='lead selected'>Please login before booking an appointment.</p>";
+                        echo "<hr class='my-4'>";
+                        echo "<a href='login.php' class= 'btn btn-lg btn-danger'>Login</a>";
+                        echo "</div>";
+                        echo "</div>";
+                    } else{
+                        ?>
+                        <div class="container">
+                            <div class="jumbotron">
+
+                                <h3 class="selected">Cat selection:</h3>
+
+
+                                <table>
+                                    <tbody>
+                                    <form action="process/proc.appointment.php?id=<?php echo $row['CID']; ?>" method="post">
+
+                                        <tr><img src="<?php echo $row['Images'] ?>" class="appointmentImage"></tr><br><br>
+
+                                        <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
+
+                                        <tr><b>Description: </b> <?php echo $row['Description']; ?></tr><br>
+
+                                        <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
+
+                                        <tr><b>Age: </b><?php echo $row['Age']; ?></tr><br>
+
+                                        <tr><label for="selecttime"><b>Select Date and Time of appointment:</b></label><br>
+                                        <input type="datetime-local"  id="selecttime" name="selecttime" REQUIRED></tr>
+                                        <br>
+                                        <br>
+
+
+                                        <td><button type="submit" class="btn btn-primary" name="appointmentnext" value="appointmentnext">Confirm book appointment</button></td>
+
+                                    </form>
+                                    </tbody>
+                                </table>
+
+                            </div>
+>>>>>>> Stashed changes
                         </div>
                         <img src="<?php echo $row['Images'] ?>" alt="imageCat" class="img-fluid">
                         <form action="process/proc.appointment.php?id=<?php echo $row['CID']; ?>" method="post"></li>
