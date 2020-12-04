@@ -52,7 +52,7 @@
             <li class="nav-item">
                 <a class="nav-link" href="../login.php">
                     <img style="margin-bottom: 1px;" id="nav-login-logo" src="../media/icon/face-white-48dp.svg" width="35" height="35" alt="Login Icon">
-                    <span style=font-weight:bold;"><?php echo $Fname; ?></span>
+                    <span class="text-white" style=font-weight:bold;"><?php echo $Fname; ?></span>
                 </a>
             </li>
         </ul>
