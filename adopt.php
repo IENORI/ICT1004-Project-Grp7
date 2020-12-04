@@ -87,45 +87,7 @@ if (mysqli_connect_errno()) {
                         <br>
                     </div>
                 </div>
-<<<<<<< Updated upstream
                 <br>
-=======
-            </div>
-            <br>
-            
-            <div class="row">
-                <?php while($row = mysqli_fetch_assoc($result)){
-                                    ?>
-                <div class="col-sm-4"  align="center">
-
-                    <figure class="figure">
-                        <figcaption class="figure-caption">
-                            <table>
-                                <tbody>
-                                    
-                                <form action="appointment.php?id=<?php echo $row['CID']; ?>" method="post">
-                                    <br>
-                                    <tr><img src="<?php echo $row['Images'] ?>" alt="imageCat" class="rounded figure-img img-fluid"></tr>
-                                    <tr><b>Name: </b><?php echo $row['CatName']; ?></tr><br>
-                                    <tr><b>Description: </b><?php echo $row['Description']; ?></tr><br>
-                                    <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
-                                    <tr><b>Age: </b><?php echo $row['Age'] ?> 
-                                    </tr><br>
-                                    <?php if (!isset($_SESSION['UID']) || ($_SESSION['IsAdmin'] == 0)){
-                                    echo"<td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                    Make appointment</button></td>";}?>
-                                </form>
-                                            
-
-
-
-
-                                </tbody>
-                                <br>
-                            </table>
-                        </figcaption>
-                    </figure>
->>>>>>> Stashed changes
 
                 <div class="row justify-content-center">
                     <?php
