@@ -109,9 +109,23 @@ if (mysqli_connect_errno()) {
                                     <tr><b>Breed: </b><?php echo $row['CatType']; ?></tr><br>
                                     <tr><b>Age: </b><?php echo $row['Age'] ?> 
                                     </tr><br>
+                                    <?php
+                                    if (!isset($_SESSION['SessionId'])){
+                                         echo "<td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
+                                    Make appointment</button></td>";
+                                                
+                                        }
+                                        
+                                    if (isset($_SESSION['SessionId'])){
+                                        if($_SESSION['IsAdmin'] == 0){
+                                                echo "<td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
+                                    Make appointment</button></td>";
+                                                
+                                        }
+                                        
+                                        }
                                     
-                                    <td><button type='submit' class='btn btn-primary' name='appointmentnext' value='appointmentnext'>
-                                    Make appointment</button></td>
+                                    ?>
                                 </form>
                                             
 
