@@ -56,6 +56,7 @@ else {
 
 
                     <?php
+                
                     if ($row2['UID'] != $UID) {
                         echo "<div class='container'>";
                         echo "<div class='jumbotron'>";
@@ -94,7 +95,7 @@ else {
                            </tbody>
                         </table>
                             </div><?php
-                         echo"</div>";}?>
+                echo"</div>";}?>
                          
                         
                         

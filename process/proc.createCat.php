@@ -5,11 +5,21 @@ $config = parse_ini_file('db.ini');
 
 $conn = new mysqli($config['servername'], $config['username'], $config['password'], $config['dbname']);
 
-$image = $_POST['cat_image'];
-$name = $_POST['cat_name'];
-$description = $_POST['cat_description'];
-$cattype = $_POST['cat_breed'];
-$age = $_POST['cat_age'];
+$image = sanitize_input($_POST['cat_image']);
+$name = sanitize_input($_POST['cat_name']);
+$description = sanitize_input($_POST['cat_description']);
+$cattype = sanitize_input($_POST['cat_breed']);
+$age = sanitize_input($_POST['cat_age']);
+
+//Helper function that checks input for malicious or unwanted content. 
+function sanitize_input($data) 
+{   
+    $data = trim($data);   
+    $data = stripslashes($data);   
+    $data = htmlspecialchars($data);   
+    return $data; 
+    
+} 
 
 if (mysqli_connect_errno()) {
     header("Location: ../load_error.php");

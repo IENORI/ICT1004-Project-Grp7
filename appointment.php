@@ -11,7 +11,7 @@ $user = (!isset($_SESSION['UID']));
 if (mysqli_connect_errno()) {
     header("Location: ../load_error.php");
 } else {
-$selectQuery = "SELECT * FROM `cat` WHERE `CID` =" . $_GET['id'];
+$selectQuery = "SELECT * FROM `cat` WHERE `CID` =" . $_GET['id']; //display cat records based on the CID (cat id)
 $result = mysqli_query($conn, $selectQuery);
 
 $row = mysqli_fetch_assoc($result);

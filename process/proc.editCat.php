@@ -15,14 +15,22 @@ if(mysqli_connect_errno()){
     header("Location: ../load_error.php");
 }
     else{
-    $image = $_POST['cat_image'];
-    $name = $_POST['cat_name'];
-    $description = $_POST['cat_description'];
-    $cattype = $_POST['cat_breed'];
-    $age = $_POST['cat_age'];
+    $image = sanitize_input($_POST['cat_image']);
+    $name = sanitize_input($_POST['cat_name']);
+    $description = sanitize_input($_POST['cat_description']);
+    $cattype = sanitize_input($_POST['cat_breed']);
+    $age = sanitize_input($_POST['cat_age']);
    
-
-
+//Helper function that checks input for malicious or unwanted content. 
+function sanitize_input($data) 
+{   
+    $data = trim($data);   
+    $data = stripslashes($data);   
+    $data = htmlspecialchars($data);   
+    return $data; 
+    
+} 
+    //update the fields that are to be changed only
     $updateQuery = "UPDATE `cat` SET Images = IF(LENGTH('$image')=0, Images, '$image'), CatName = IF(LENGTH('$name')=0, CatName, '$name'), Description = IF(LENGTH('$description')=0, Description, '$description'), CatType = IF(LENGTH('$cattype')=0, CatType, '$cattype'), Age = IF(LENGTH('$age')=0, Age, '$age') WHERE CID =" . $_GET['id'];
     $result = mysqli_query($conn, $updateQuery);
     }
