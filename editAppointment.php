@@ -27,9 +27,15 @@ else {
 
     $row = mysqli_fetch_assoc($result);
     $row2 = mysqli_fetch_assoc($result2);
+   
 
 
     if (mysqli_num_rows($result) > 0) {
+        
+    } else {
+        $msg = "No Record found";
+    }
+    if (mysqli_num_rows($result2) > 0) {
         
     } else {
         $msg = "No Record found";
@@ -52,8 +58,7 @@ else {
                 <br>
                 <?php
                 ?>
-                <div class="container">
-
+               
 
                     <?php
                 
@@ -68,9 +73,10 @@ else {
                         echo "</div>";
                     } else {
                         ?>
-                        <div class="container">
-                            <div class="jumbotron">
-<!--<<<<<<< Updated upstream-->
+                      
+                           
+<!--<<<<<<< Updated upstream--> <div class="container">
+                <div class="jumbotron">
                                 <h3 class="selected">Cat selection:</h3>
                                 <table>
                                     <tbody> 
@@ -93,9 +99,9 @@ else {
                                 <td><a href='adopt.php' button='submit' id="backAppt" class='btn btn-danger' name='appointmentnext' value='appointmentnext'>Back</a></td>
                                 </form>
                            </tbody>
-                        </table>
-                            </div><?php
-                echo"</div>";}?>
+                        
+                           <?php
+                echo"</table>";}?>
                          
                         
                         
