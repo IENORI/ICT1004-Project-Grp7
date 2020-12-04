@@ -16,7 +16,7 @@
         }
     }
 ?>
-<nav class="navbar nav-pills sticky-top navbar-expand-sm navbar-dark bg-primary">
+<nav class="navbar nav-pills sticky-top navbar-expand-sm navbar-dark bg-primary shadow">
     <a class="navbar-brand" href="/">
         <img id="nav-logo" src="../media/icon/cat.svg" width="30" height="30" alt="Company Logo">
         <b>Cat Sanctuary</b>
