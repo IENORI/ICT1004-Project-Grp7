@@ -39,7 +39,7 @@
             if (isset($_SESSION['SessionId'])){
                 if($_SESSION['IsAdmin'] == 0){
                 echo "<li class='nav-item'>
-                <a class='nav-link' href='../editAppointment.php'>Appointment</a>
+                <a class='nav-link active' href='../editAppointment.php'><b>Appointment</b></a>
             </li>";
                 }
             }
