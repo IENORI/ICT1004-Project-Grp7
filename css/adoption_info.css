@@ -10,14 +10,19 @@ and open the template in the editor.
 .collapsible{
     color: white;
     cursor: pointer;
-    padding: 18px;
+    /*padding: 12px;*/
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 8px;
+    padding-bottom: 8px;
     width: 100%;
     border: none;
     text-align:left;
     outline: none;
-    font-size: 20px;
+    font-size: 18px;
     border: 1px solid white;
-    
+    border-radius: 8px;
+
 }
 
 .btnactive, .collapsible:hover{
