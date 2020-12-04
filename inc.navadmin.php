@@ -1,5 +1,5 @@
 <div class="dropdown">
-  <button class="btn btn-primary dropdown-toggle" type="button" id="admdropdownbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+  <button style="margin-top: 1px; font-weight: bold" class="btn btn-primary dropdown-toggle" type="button" id="admdropdownbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Admin View
   </button>
   <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
